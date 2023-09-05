@@ -1,0 +1,12 @@
+Group C
+Dorian Gailhard, Arnaud Minondo, Balthazar Mignard
+
+For the eviction policy, we chose to evict the least recent accessed page : we
+keep track of the last access time in an array, search for the oldest one and evict
+this page.
+
+We used a nested-loops join.
+
+No changes to the API were made.
+
+We spent something around 8 hours to complete the lab.
