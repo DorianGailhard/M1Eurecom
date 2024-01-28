@@ -1,0 +1,306 @@
+body {
+	background-color: #90d4cb;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-family: Garamond, sans-serif;
+}
+
+header {
+	padding: 0cm;
+	margin: 0cm;
+	position: fixed;
+	top: 0vw;
+	width: 100%;
+	background-color: #6ea29b;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav {
+	font-family: Garamond, sans-serif;
+	float: left;
+	text-align: start;
+	font-size: 0.4cm;
+	margin-bottom: 0.5cm;
+	border-bottom: 1px solid black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a:after {
+    display: inline-block;
+    color: black;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+#title {
+	font-family: "Lucida Console", Monospace, sans-serif;
+	font-size: 0.75cm;
+	padding: 0.5cm; /* if put inside header, header width is bigger than the screen, as if padding is not taken into account when fitting available width*/
+	margin: 0;
+}
+
+#headerButtons {
+	padding: 0.5cm; /* same */
+}
+
+.headerButton {
+  display: inline-block;
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 0.6cm;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.headerButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.headerButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  top: 0;
+  right: -0.4cm;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.headerButton:hover span {
+  padding-right: 0.4cm;
+}
+
+.headerButton:hover span:after {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  right: 0;
+}
+
+h2 {
+	font-size:0.5cm;
+	color: black;
+	margin-top: 0.2cm;
+	margin-bottom: 0cm;
+}
+
+h3 {
+	font-size:0.4cm;
+	color: gray;
+	margin-top: 0.2cm;
+}
+
+#content {
+  width: 100vw;
+}
+
+.titleDiv {
+	text-align: start;
+	padding: 0;
+	width: 100%;
+}
+
+article {
+	display: inline-block;
+	padding: 2vw;
+	margin: 2vw;
+	width: 85vw;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#commentsZoneDiv {
+	overflow: auto;
+	max-height: 12cm;
+	display: inline-block;
+	padding: 0.5cm;
+}
+
+.comment {
+	display: inline;
+}
+
+.commentHeader {
+	font-weight: bold;
+}
+
+.commentContent {
+	text-align: justify;
+	width: 100%;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+#jukeboxArticle {
+	margin-bottom: 6vh;
+}
+
+section {
+	margin: 0.5cm;
+}
+
+aside {
+	display: inline-block;
+	padding: 1vw;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 15vw;
+	position: fixed;
+	right: 3vw;
+}
+
+.videoSuggestion {
+	width: 100%;
+}
+
+.suggestionThumbnail {
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 0.2cm;
+}
+
+.suggestionTitle {
+	width: 100%;
+	font-size:0.4cm;
+}
+
+.suggestionChannel {
+	width: 100%;
+	font-size:0.35cm;
+	color: gray;
+}
+
+video {
+	width: 100%;
+}
+
+canvas {
+	width: 100%;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+}
+
+#divBubble {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 20vw;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+          mask-image: radial-gradient(circle, white 100%, black 100%);
+  margin: 0 auto;
+}
+
+#videoBubble {
+  width: 80vw;
+  height: 80vw;
+  position: relative;
+  top: -20vw;
+  left: -20vw;
+}
+
+textarea {
+	background-color: white;
+}
+
+footer {
+	position: fixed;
+	bottom: 0vh;
+	border-top: 2px;
+	width: 100vw;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-bottom: 0.1cm;
+	padding-top: 0.1cm;
+}
+
+.googleMap {
+	width: 10cm;
+	height: 10cm;
+	margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	aside {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	article {
+		float: left;
+		width: 70vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#headerButtons {
+	white-space: nowrap;
+	float: right;
+	word-spacing: 5vw;
+	position: relative;
+	right: 3cm;
+	}
+	
+	#title {
+		float: left;
+		margin-right: 2cm;
+	}
+
+	#mainArticle, aside {
+		margin-top: 2.2cm;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#mainArticle, aside {
+	margin-top: 3.6cm;
+	}
+	
+	#headerButtons, #title {
+		padding: 0.25cm;
+	}
+}

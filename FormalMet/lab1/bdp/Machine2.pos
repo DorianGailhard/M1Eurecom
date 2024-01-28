@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations version="1.0" xmlns="https://www.atelierb.eu/Formats/pog" author="pmi2Pos">
+<Proof_Obligation>
+<Tag>Initialisation</Tag>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+</Proof_Obligations>

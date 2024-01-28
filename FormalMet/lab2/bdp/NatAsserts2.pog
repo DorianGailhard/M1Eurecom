@@ -1,0 +1,1586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0">
+    <Define name="B definitions" hash="4145786887">
+        <Exp_Comparison op="=">
+            <Id value="NAT" typref="0"/>
+            <Binary_Exp op=".." typref="0">
+                <Integer_Literal value="0" typref="1"/>
+                <Id value="MAXINT" typref="1"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="INT" typref="0"/>
+            <Binary_Exp op=".." typref="0">
+                <Id value="MININT" typref="1"/>
+                <Id value="MAXINT" typref="1"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+    </Define>
+    <Define name="ctx" hash="0"/>
+    <Define name="seext" hash="0"/>
+    <Define name="lprp" hash="0"/>
+    <Define name="inprp" hash="0"/>
+    <Define name="inext" hash="0"/>
+    <Define name="inv" hash="0"/>
+    <Define name="ass" hash="465130628">
+        <Quantified_Pred type="#">
+            <Variables>
+                <Id value="xx" typref="1"/>
+            </Variables>
+            <Body>
+                <Nary_Pred op="&amp;">
+                    <Exp_Comparison op=":">
+                        <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:1:1"/>
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:1:2"/>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="!">
+                        <Variables>
+                            <Id value="yy" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Binary_Pred op="=&gt;">
+                                <Exp_Comparison op=":">
+                                    <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:1:1"/>
+                                    <Id value="INTEGER" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="&lt;=i">
+                                    <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:2:1"/>
+                                    <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:2:2"/>
+                                </Exp_Comparison>
+                            </Binary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Nary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="xx" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:1:1"/>
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:1:2"/>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="yy" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:1:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="&lt;i">
+                                    <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:2:1"/>
+                                    <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:2:2"/>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="nn" typref="1"/>
+                <Id value="mm" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:1:2"/>
+                        </Exp_Comparison>
+                        <Exp_Comparison op=":">
+                            <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:2:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:2:2"/>
+                        </Exp_Comparison>
+                        <Unary_Pred op="not">
+                            <Exp_Comparison op="=">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:3:1"/>
+                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:3:2"/>
+                            </Exp_Comparison>
+                        </Unary_Pred>
+                    </Nary_Pred>
+                    <Nary_Pred op="or">
+                        <Exp_Comparison op="&lt;i">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:1:1"/>
+                            <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:1:2"/>
+                        </Exp_Comparison>
+                        <Exp_Comparison op="&gt;i">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:2:1"/>
+                            <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:2:2"/>
+                        </Exp_Comparison>
+                    </Nary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="nn" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:1:1"/>
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:1:2"/>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="kk" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:1:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Nary_Pred op="or">
+                                    <Exp_Comparison op="=">
+                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:1"/>
+                                        <Binary_Exp op="*i" typref="1">
+                                            <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:2:1"/>
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="=">
+                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:1"/>
+                                        <Binary_Exp op="+i" typref="1">
+                                            <Binary_Exp op="*i" typref="1">
+                                                <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:1:1"/>
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:1:2"/>
+                                            </Binary_Exp>
+                                            <Integer_Literal value="1" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="nn" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:1:1"/>
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:1:2"/>
+                    </Exp_Comparison>
+                    <Nary_Pred op="&amp;">
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="kk" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="=">
+                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:1"/>
+                                        <Binary_Exp op="*i" typref="1">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:2:1"/>
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="kk" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="=">
+                                        <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:1"/>
+                                        <Binary_Exp op="*i" typref="1">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:2:1"/>
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Nary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="#">
+            <Variables>
+                <Id value="kk" typref="1"/>
+            </Variables>
+            <Body>
+                <Nary_Pred op="&amp;">
+                    <Exp_Comparison op=":">
+                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:1:1"/>
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:1:2"/>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="!">
+                        <Variables>
+                            <Id value="nn" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Binary_Pred op="=&gt;">
+                                <Exp_Comparison op=":">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:1:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Quantified_Pred type="#">
+                                    <Variables>
+                                        <Id value="kk" typref="1"/>
+                                    </Variables>
+                                    <Body>
+                                        <Nary_Pred op="&amp;">
+                                            <Exp_Comparison op=":">
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:1:1"/>
+                                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:1:2"/>
+                                            </Exp_Comparison>
+                                            <Exp_Comparison op="=">
+                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:1"/>
+                                                <Binary_Exp op="*i" typref="1">
+                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:2:1"/>
+                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:2:2"/>
+                                                </Binary_Exp>
+                                            </Exp_Comparison>
+                                        </Nary_Pred>
+                                    </Body>
+                                </Quantified_Pred>
+                            </Binary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Nary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="dd" typref="1"/>
+                <Id value="nn" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:2"/>
+                        </Exp_Comparison>
+                        <Exp_Comparison op=":">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:2:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:2:2"/>
+                        </Exp_Comparison>
+                        <Unary_Pred op="not">
+                            <Exp_Comparison op="=">
+                                <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:1"/>
+                                <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:2"/>
+                            </Exp_Comparison>
+                        </Unary_Pred>
+                    </Nary_Pred>
+                    <Binary_Pred op="&lt;=&gt;">
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="kk" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="=">
+                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:1"/>
+                                        <Binary_Exp op="*i" typref="1">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:2:1"/>
+                                            <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                        <Exp_Comparison op="=">
+                            <Binary_Exp op="mod" typref="1">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:1"/>
+                                <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:2"/>
+                            </Binary_Exp>
+                            <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:2"/>
+                        </Exp_Comparison>
+                    </Binary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="nn" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:1:1"/>
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:1:2"/>
+                    </Exp_Comparison>
+                    <Nary_Pred op="&amp;">
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="kk" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="=">
+                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:2:1"/>
+                                        <Binary_Exp op="*i" typref="1">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:2:2:1"/>
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                        <Quantified_Pred type="!">
+                            <Variables>
+                                <Id value="mm" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Binary_Pred op="=&gt;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Nary_Pred op="&amp;">
+                                        <Binary_Pred op="=&gt;">
+                                            <Nary_Pred op="&amp;">
+                                                <Quantified_Pred type="#">
+                                                    <Variables>
+                                                        <Id value="kk" typref="1"/>
+                                                    </Variables>
+                                                    <Body>
+                                                        <Nary_Pred op="&amp;">
+                                                            <Exp_Comparison op=":">
+                                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:1:1"/>
+                                                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:1:2"/>
+                                                            </Exp_Comparison>
+                                                            <Exp_Comparison op="=">
+                                                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:1"/>
+                                                                <Binary_Exp op="*i" typref="1">
+                                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:2:1"/>
+                                                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:2:2"/>
+                                                                </Binary_Exp>
+                                                            </Exp_Comparison>
+                                                        </Nary_Pred>
+                                                    </Body>
+                                                </Quantified_Pred>
+                                                <Quantified_Pred type="#">
+                                                    <Variables>
+                                                        <Id value="kk" typref="1"/>
+                                                    </Variables>
+                                                    <Body>
+                                                        <Nary_Pred op="&amp;">
+                                                            <Exp_Comparison op=":">
+                                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:1:1"/>
+                                                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:1:2"/>
+                                                            </Exp_Comparison>
+                                                            <Exp_Comparison op="=">
+                                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:1"/>
+                                                                <Binary_Exp op="*i" typref="1">
+                                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:2:1"/>
+                                                                    <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:2:2"/>
+                                                                </Binary_Exp>
+                                                            </Exp_Comparison>
+                                                        </Nary_Pred>
+                                                    </Body>
+                                                </Quantified_Pred>
+                                            </Nary_Pred>
+                                            <Exp_Comparison op="=">
+                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:2:1"/>
+                                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:2:2"/>
+                                            </Exp_Comparison>
+                                        </Binary_Pred>
+                                        <Quantified_Pred type="!">
+                                            <Variables>
+                                                <Id value="kk" typref="1"/>
+                                            </Variables>
+                                            <Body>
+                                                <Binary_Pred op="=&gt;">
+                                                    <Nary_Pred op="&amp;">
+                                                        <Exp_Comparison op=":">
+                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:1:1"/>
+                                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:1:2"/>
+                                                        </Exp_Comparison>
+                                                        <Quantified_Pred type="#">
+                                                            <Variables>
+                                                                <Id value="kk" typref="1"/>
+                                                            </Variables>
+                                                            <Body>
+                                                                <Nary_Pred op="&amp;">
+                                                                    <Exp_Comparison op=":">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:1:1"/>
+                                                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:1:2"/>
+                                                                    </Exp_Comparison>
+                                                                    <Exp_Comparison op="=">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:1"/>
+                                                                        <Binary_Exp op="*i" typref="1">
+                                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:2:1"/>
+                                                                            <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:2:2"/>
+                                                                        </Binary_Exp>
+                                                                    </Exp_Comparison>
+                                                                </Nary_Pred>
+                                                            </Body>
+                                                        </Quantified_Pred>
+                                                        <Quantified_Pred type="#">
+                                                            <Variables>
+                                                                <Id value="kk" typref="1"/>
+                                                            </Variables>
+                                                            <Body>
+                                                                <Nary_Pred op="&amp;">
+                                                                    <Exp_Comparison op=":">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:1:1"/>
+                                                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:1:2"/>
+                                                                    </Exp_Comparison>
+                                                                    <Exp_Comparison op="=">
+                                                                        <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:2:1"/>
+                                                                        <Binary_Exp op="*i" typref="1">
+                                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:2:2:1"/>
+                                                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:2:2:2"/>
+                                                                        </Binary_Exp>
+                                                                    </Exp_Comparison>
+                                                                </Nary_Pred>
+                                                            </Body>
+                                                        </Quantified_Pred>
+                                                    </Nary_Pred>
+                                                    <Quantified_Pred type="#">
+                                                        <Variables>
+                                                            <Id value="kk" typref="1"/>
+                                                        </Variables>
+                                                        <Body>
+                                                            <Nary_Pred op="&amp;">
+                                                                <Exp_Comparison op=":">
+                                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:1:1"/>
+                                                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:1:2"/>
+                                                                </Exp_Comparison>
+                                                                <Exp_Comparison op="=">
+                                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:1"/>
+                                                                    <Binary_Exp op="*i" typref="1">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:2:1"/>
+                                                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:2:2"/>
+                                                                    </Binary_Exp>
+                                                                </Exp_Comparison>
+                                                            </Nary_Pred>
+                                                        </Body>
+                                                    </Quantified_Pred>
+                                                </Binary_Pred>
+                                            </Body>
+                                        </Quantified_Pred>
+                                    </Nary_Pred>
+                                </Binary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Nary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="nn" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:1:1"/>
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:1:2"/>
+                    </Exp_Comparison>
+                    <Binary_Pred op="&lt;=&gt;">
+                        <Exp_Comparison op="=">
+                            <Binary_Exp op="mod" typref="1">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:1:1"/>
+                                <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:1:2"/>
+                            </Binary_Exp>
+                            <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:2"/>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="kk" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="=">
+                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:2:1"/>
+                                        <Binary_Exp op="*i" typref="1">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:2:2:1"/>
+                                            <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+    </Define>
+    <Define name="cst" hash="0"/>
+    <Define name="sets" hash="0"/>
+    <Proof_Obligation goalHash="1892644879">
+        <Tag>AssertionLemmas</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Local_Hyp num="1">
+            <Exp_Comparison op=":">
+                <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:1:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="2">
+            <Exp_Comparison op=":">
+                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:1:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="3">
+            <Exp_Comparison op=":">
+                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:2:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:2:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="4">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:3:1"/>
+                    <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:3:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="5">
+            <Exp_Comparison op=":">
+                <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="6">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:1"/>
+                    <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="7">
+            <Quantified_Pred type="#">
+                <Variables>
+                    <Id value="kk" typref="1"/>
+                </Variables>
+                <Body>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Exp_Comparison op="=">
+                            <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:1"/>
+                            <Binary_Exp op="*i" typref="1">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:2:1"/>
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:2:2"/>
+                            </Binary_Exp>
+                        </Exp_Comparison>
+                    </Nary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="8">
+            <Quantified_Pred type="#">
+                <Variables>
+                    <Id value="kk" typref="1"/>
+                </Variables>
+                <Body>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Exp_Comparison op="=">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:1"/>
+                            <Binary_Exp op="*i" typref="1">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:2:1"/>
+                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:2:2"/>
+                            </Binary_Exp>
+                        </Exp_Comparison>
+                    </Nary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="9">
+            <Exp_Comparison op=":">
+                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:1:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="10">
+            <Quantified_Pred type="#">
+                <Variables>
+                    <Id value="kk" typref="1"/>
+                </Variables>
+                <Body>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Exp_Comparison op="=">
+                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:1"/>
+                            <Binary_Exp op="*i" typref="1">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:2:1"/>
+                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:2:2"/>
+                            </Binary_Exp>
+                        </Exp_Comparison>
+                    </Nary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="xx" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Quantified_Pred type="!">
+                                <Variables>
+                                    <Id value="yy" typref="1"/>
+                                </Variables>
+                                <Body>
+                                    <Binary_Pred op="=&gt;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:1:1"/>
+                                            <Id value="INTEGER" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="&lt;=i">
+                                            <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:2:1"/>
+                                            <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:2:2"/>
+                                        </Exp_Comparison>
+                                    </Binary_Pred>
+                                </Body>
+                            </Quantified_Pred>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="1"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="yy" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="&lt;i">
+                                <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:2:1"/>
+                                <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:2:2"/>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="4"/>
+            <Goal>
+                <Nary_Pred op="or">
+                    <Exp_Comparison op="&lt;i">
+                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:1:1"/>
+                        <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:1:2"/>
+                    </Exp_Comparison>
+                    <Exp_Comparison op="&gt;i">
+                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:2:1"/>
+                        <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:2:2"/>
+                    </Exp_Comparison>
+                </Nary_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="kk" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Nary_Pred op="or">
+                                <Exp_Comparison op="=">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:1"/>
+                                    <Binary_Exp op="*i" typref="1">
+                                        <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:2:1"/>
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:2:2"/>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="=">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:1"/>
+                                    <Binary_Exp op="+i" typref="1">
+                                        <Binary_Exp op="*i" typref="1">
+                                            <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:1:1"/>
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:1:2"/>
+                                        </Binary_Exp>
+                                        <Integer_Literal value="1" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:2"/>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="kk" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="=">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:1"/>
+                                <Binary_Exp op="*i" typref="1">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:2:1"/>
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:2:2"/>
+                                </Binary_Exp>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="kk" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="=">
+                                <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:1"/>
+                                <Binary_Exp op="*i" typref="1">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:2:1"/>
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:2:2"/>
+                                </Binary_Exp>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="kk" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="=">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:1"/>
+                                <Binary_Exp op="*i" typref="1">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:2:1"/>
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:2:2"/>
+                                </Binary_Exp>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="kk" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Exp_Comparison op=":">
+                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:1:2"/>
+                        </Exp_Comparison>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="6"/>
+            <Goal>
+                <Binary_Pred op="&lt;=&gt;">
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="kk" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:1:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="=">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:1"/>
+                                    <Binary_Exp op="*i" typref="1">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:2:1"/>
+                                        <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:2:2"/>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                    <Exp_Comparison op="=">
+                        <Binary_Exp op="mod" typref="1">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:1"/>
+                            <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:2"/>
+                        </Binary_Exp>
+                        <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:2"/>
+                    </Exp_Comparison>
+                </Binary_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Goal>
+                <Exp_Comparison op="=">
+                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:2:1"/>
+                    <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:2:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="9"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="7"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="kk" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="=">
+                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:1"/>
+                                <Binary_Exp op="*i" typref="1">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:2:1"/>
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:2:2"/>
+                                </Binary_Exp>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Goal>
+                <Binary_Pred op="&lt;=&gt;">
+                    <Exp_Comparison op="=">
+                        <Binary_Exp op="mod" typref="1">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:1:1"/>
+                            <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:1:2"/>
+                        </Binary_Exp>
+                        <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:2"/>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="kk" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:1:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="=">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:2:1"/>
+                                    <Binary_Exp op="*i" typref="1">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:2:2:1"/>
+                                        <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:2:2:1:2:2:2"/>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <Proof_Obligation goalHash="465130628">
+        <Tag>WellDefinednessAssertions</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Local_Hyp num="1">
+            <Quantified_Pred type="#">
+                <Variables>
+                    <Id value="xx" typref="1"/>
+                </Variables>
+                <Body>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="!">
+                            <Variables>
+                                <Id value="yy" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Binary_Pred op="=&gt;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:1:1"/>
+                                        <Id value="INTEGER" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="&lt;=i">
+                                        <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:2:1"/>
+                                        <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:1:2:1:2:2:1:2:2"/>
+                                    </Exp_Comparison>
+                                </Binary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Nary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="2">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="xx" typref="1"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Exp_Comparison op=":">
+                            <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="yy" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="&lt;i">
+                                        <Id value="xx" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:2:1"/>
+                                        <Id value="yy" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:2:2:1:2:2:1:2:2"/>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="3">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="nn" typref="1"/>
+                    <Id value="mm" typref="1"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op=":">
+                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:2:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:2:2"/>
+                            </Exp_Comparison>
+                            <Unary_Pred op="not">
+                                <Exp_Comparison op="=">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:3:1"/>
+                                    <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:1:3:2"/>
+                                </Exp_Comparison>
+                            </Unary_Pred>
+                        </Nary_Pred>
+                        <Nary_Pred op="or">
+                            <Exp_Comparison op="&lt;i">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:1:1"/>
+                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="&gt;i">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:2:1"/>
+                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:3:2:1:2:2:2"/>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="4">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="nn" typref="1"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Exp_Comparison op=":">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="kk" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Nary_Pred op="or">
+                                        <Exp_Comparison op="=">
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:1"/>
+                                            <Binary_Exp op="*i" typref="1">
+                                                <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:2:1"/>
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:1:2:2"/>
+                                            </Binary_Exp>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="=">
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:1"/>
+                                            <Binary_Exp op="+i" typref="1">
+                                                <Binary_Exp op="*i" typref="1">
+                                                    <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:1:1"/>
+                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:1:2"/>
+                                                </Binary_Exp>
+                                                <Integer_Literal value="1" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:4:2:1:2:2:1:2:2:2:2"/>
+                                            </Binary_Exp>
+                                        </Exp_Comparison>
+                                    </Nary_Pred>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="5">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="nn" typref="1"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Exp_Comparison op=":">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Nary_Pred op="&amp;">
+                            <Quantified_Pred type="#">
+                                <Variables>
+                                    <Id value="kk" typref="1"/>
+                                </Variables>
+                                <Body>
+                                    <Nary_Pred op="&amp;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:1:1"/>
+                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="=">
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:1"/>
+                                            <Binary_Exp op="*i" typref="1">
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:2:1"/>
+                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:1:2:1:2:2:2"/>
+                                            </Binary_Exp>
+                                        </Exp_Comparison>
+                                    </Nary_Pred>
+                                </Body>
+                            </Quantified_Pred>
+                            <Quantified_Pred type="#">
+                                <Variables>
+                                    <Id value="kk" typref="1"/>
+                                </Variables>
+                                <Body>
+                                    <Nary_Pred op="&amp;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:1:1"/>
+                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="=">
+                                            <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:1"/>
+                                            <Binary_Exp op="*i" typref="1">
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:2:1"/>
+                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:5:2:1:2:2:2:1:2:2:2"/>
+                                            </Binary_Exp>
+                                        </Exp_Comparison>
+                                    </Nary_Pred>
+                                </Body>
+                            </Quantified_Pred>
+                        </Nary_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="6">
+            <Quantified_Pred type="#">
+                <Variables>
+                    <Id value="kk" typref="1"/>
+                </Variables>
+                <Body>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="!">
+                            <Variables>
+                                <Id value="nn" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Binary_Pred op="=&gt;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Quantified_Pred type="#">
+                                        <Variables>
+                                            <Id value="kk" typref="1"/>
+                                        </Variables>
+                                        <Body>
+                                            <Nary_Pred op="&amp;">
+                                                <Exp_Comparison op=":">
+                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:1:1"/>
+                                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:1:2"/>
+                                                </Exp_Comparison>
+                                                <Exp_Comparison op="=">
+                                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:1"/>
+                                                    <Binary_Exp op="*i" typref="1">
+                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:2:1"/>
+                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:6:2:1:2:2:1:2:2:1:2:2:2"/>
+                                                    </Binary_Exp>
+                                                </Exp_Comparison>
+                                            </Nary_Pred>
+                                        </Body>
+                                    </Quantified_Pred>
+                                </Binary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Nary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="7">
+            <Exp_Comparison op=":">
+                <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="8">
+            <Exp_Comparison op=":">
+                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:2:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:2:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="9">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:1"/>
+                    <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="10">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="dd" typref="1"/>
+                    <Id value="nn" typref="1"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op=":">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:2:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:2:2"/>
+                            </Exp_Comparison>
+                            <Unary_Pred op="not">
+                                <Exp_Comparison op="=">
+                                    <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:1"/>
+                                    <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:1:3:2"/>
+                                </Exp_Comparison>
+                            </Unary_Pred>
+                        </Nary_Pred>
+                        <Binary_Pred op="&lt;=&gt;">
+                            <Quantified_Pred type="#">
+                                <Variables>
+                                    <Id value="kk" typref="1"/>
+                                </Variables>
+                                <Body>
+                                    <Nary_Pred op="&amp;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:1:1"/>
+                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="=">
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:1"/>
+                                            <Binary_Exp op="*i" typref="1">
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:2:1"/>
+                                                <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:1:2:1:2:2:2"/>
+                                            </Binary_Exp>
+                                        </Exp_Comparison>
+                                    </Nary_Pred>
+                                </Body>
+                            </Quantified_Pred>
+                            <Exp_Comparison op="=">
+                                <Binary_Exp op="mod" typref="1">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:1"/>
+                                    <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:2"/>
+                                </Binary_Exp>
+                                <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:2"/>
+                            </Exp_Comparison>
+                        </Binary_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="11">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="nn" typref="1"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Exp_Comparison op=":">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:1:2"/>
+                        </Exp_Comparison>
+                        <Nary_Pred op="&amp;">
+                            <Quantified_Pred type="#">
+                                <Variables>
+                                    <Id value="kk" typref="1"/>
+                                </Variables>
+                                <Body>
+                                    <Nary_Pred op="&amp;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:1:1"/>
+                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="=">
+                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:2:1"/>
+                                            <Binary_Exp op="*i" typref="1">
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:2:2:1"/>
+                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:1:2:1:2:2:2"/>
+                                            </Binary_Exp>
+                                        </Exp_Comparison>
+                                    </Nary_Pred>
+                                </Body>
+                            </Quantified_Pred>
+                            <Quantified_Pred type="!">
+                                <Variables>
+                                    <Id value="mm" typref="1"/>
+                                </Variables>
+                                <Body>
+                                    <Binary_Pred op="=&gt;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:1:1"/>
+                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Nary_Pred op="&amp;">
+                                            <Binary_Pred op="=&gt;">
+                                                <Nary_Pred op="&amp;">
+                                                    <Quantified_Pred type="#">
+                                                        <Variables>
+                                                            <Id value="kk" typref="1"/>
+                                                        </Variables>
+                                                        <Body>
+                                                            <Nary_Pred op="&amp;">
+                                                                <Exp_Comparison op=":">
+                                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:1:1"/>
+                                                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:1:2"/>
+                                                                </Exp_Comparison>
+                                                                <Exp_Comparison op="=">
+                                                                    <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:1"/>
+                                                                    <Binary_Exp op="*i" typref="1">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:2:1"/>
+                                                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:1:2:1:2:2:2"/>
+                                                                    </Binary_Exp>
+                                                                </Exp_Comparison>
+                                                            </Nary_Pred>
+                                                        </Body>
+                                                    </Quantified_Pred>
+                                                    <Quantified_Pred type="#">
+                                                        <Variables>
+                                                            <Id value="kk" typref="1"/>
+                                                        </Variables>
+                                                        <Body>
+                                                            <Nary_Pred op="&amp;">
+                                                                <Exp_Comparison op=":">
+                                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:1:1"/>
+                                                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:1:2"/>
+                                                                </Exp_Comparison>
+                                                                <Exp_Comparison op="=">
+                                                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:1"/>
+                                                                    <Binary_Exp op="*i" typref="1">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:2:1"/>
+                                                                        <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:1:2:2:1:2:2:2"/>
+                                                                    </Binary_Exp>
+                                                                </Exp_Comparison>
+                                                            </Nary_Pred>
+                                                        </Body>
+                                                    </Quantified_Pred>
+                                                </Nary_Pred>
+                                                <Exp_Comparison op="=">
+                                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:2:1"/>
+                                                    <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:1:2:2"/>
+                                                </Exp_Comparison>
+                                            </Binary_Pred>
+                                            <Quantified_Pred type="!">
+                                                <Variables>
+                                                    <Id value="kk" typref="1"/>
+                                                </Variables>
+                                                <Body>
+                                                    <Binary_Pred op="=&gt;">
+                                                        <Nary_Pred op="&amp;">
+                                                            <Exp_Comparison op=":">
+                                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:1:1"/>
+                                                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:1:2"/>
+                                                            </Exp_Comparison>
+                                                            <Quantified_Pred type="#">
+                                                                <Variables>
+                                                                    <Id value="kk" typref="1"/>
+                                                                </Variables>
+                                                                <Body>
+                                                                    <Nary_Pred op="&amp;">
+                                                                        <Exp_Comparison op=":">
+                                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:1:1"/>
+                                                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:1:2"/>
+                                                                        </Exp_Comparison>
+                                                                        <Exp_Comparison op="=">
+                                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:1"/>
+                                                                            <Binary_Exp op="*i" typref="1">
+                                                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:2:1"/>
+                                                                                <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:2:2:1:2:2:2"/>
+                                                                            </Binary_Exp>
+                                                                        </Exp_Comparison>
+                                                                    </Nary_Pred>
+                                                                </Body>
+                                                            </Quantified_Pred>
+                                                            <Quantified_Pred type="#">
+                                                                <Variables>
+                                                                    <Id value="kk" typref="1"/>
+                                                                </Variables>
+                                                                <Body>
+                                                                    <Nary_Pred op="&amp;">
+                                                                        <Exp_Comparison op=":">
+                                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:1:1"/>
+                                                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:1:2"/>
+                                                                        </Exp_Comparison>
+                                                                        <Exp_Comparison op="=">
+                                                                            <Id value="mm" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:2:1"/>
+                                                                            <Binary_Exp op="*i" typref="1">
+                                                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:2:2:1"/>
+                                                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:1:3:2:1:2:2:2"/>
+                                                                            </Binary_Exp>
+                                                                        </Exp_Comparison>
+                                                                    </Nary_Pred>
+                                                                </Body>
+                                                            </Quantified_Pred>
+                                                        </Nary_Pred>
+                                                        <Quantified_Pred type="#">
+                                                            <Variables>
+                                                                <Id value="kk" typref="1"/>
+                                                            </Variables>
+                                                            <Body>
+                                                                <Nary_Pred op="&amp;">
+                                                                    <Exp_Comparison op=":">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:1:1"/>
+                                                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:1:2"/>
+                                                                    </Exp_Comparison>
+                                                                    <Exp_Comparison op="=">
+                                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:1"/>
+                                                                        <Binary_Exp op="*i" typref="1">
+                                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:2:1"/>
+                                                                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:8:2:1:2:2:2:1:2:2:2:1:2:2:1:2:2:2"/>
+                                                                        </Binary_Exp>
+                                                                    </Exp_Comparison>
+                                                                </Nary_Pred>
+                                                            </Body>
+                                                        </Quantified_Pred>
+                                                    </Binary_Pred>
+                                                </Body>
+                                            </Quantified_Pred>
+                                        </Nary_Pred>
+                                    </Binary_Pred>
+                                </Body>
+                            </Quantified_Pred>
+                        </Nary_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="6"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="9"/>
+            <Goal>
+                <Exp_Comparison op="&lt;=i">
+                    <Integer_Literal value="0" typref="1"/>
+                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:1"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="6"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="9"/>
+            <Goal>
+                <Exp_Comparison op="&lt;=i">
+                    <Integer_Literal value="1" typref="1"/>
+                    <Id value="dd" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:7:2:1:2:2:1:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="6"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="11"/>
+            <Ref_Hyp num="8"/>
+            <Goal>
+                <Exp_Comparison op="&lt;=i">
+                    <Integer_Literal value="0" typref="1"/>
+                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:1:1"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="6"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="11"/>
+            <Ref_Hyp num="8"/>
+            <Goal>
+                <Exp_Comparison op="&lt;=i">
+                    <Integer_Literal value="1" typref="1"/>
+                    <Integer_Literal value="2" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\NatAsserts2.bxml:1:2:1:9:2:1:2:1:1:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <TypeInfos>
+        <Type id="0">
+            <Unary_Exp op="POW">
+                <Id value="INTEGER"/>
+            </Unary_Exp>
+        </Type>
+        <Type id="1">
+            <Id value="INTEGER"/>
+        </Type>
+    </TypeInfos>
+</Proof_Obligations>

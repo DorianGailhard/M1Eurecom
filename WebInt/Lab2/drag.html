@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Steps</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/drag.css">
+    <script src="https://kit.fontawesome.com/7dc7afdb3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="navigation-bar">
+        <p>Post a new choreography</p>
+    </header>
+
+    <aside class="menusidebar">
+
+        <input type="checkbox" id="arrow" class="btn-back">
+            <a href="index.html" id="btnarrow"><i class="fas fa-arrow-left" ></i></a>
+            
+    </aside>
+
+    <section class="content-container">
+        <article class="publication">
+            <div class="container-drop-zone">
+                <div class="drop-zone" id="dropzone"><p id="textdropped">Drop your video here</p></div>
+                <img id="dropimg" class="img-zone" src="images/favicon.png" alt="drag image">
+            </div>
+            <p>Please drop file with format .mp4 !</p>
+            <p><small>At most 10 videos at a time</small></p>
+
+            <input type="text" placeholder="Description">
+            <input type="text" placeholder="HashTags">
+        
+        </article>
+
+        <article class="publication">
+            <div class="container-drop-zone">
+                <div class="drop-zone" id="dropzone"><p id="textdropped"> Drop your video here</p></div>
+                <img id="dropimg" class="img-zone" src="images/favicon.png" alt="drag image">
+            </div>
+            <p>Please drop file with format .mp4 !</p>
+            <p><small>At most 10 videos at a time</small></p>
+            <input type="text" placeholder="Steps">
+        </article>
+
+        <div class="btn-back">
+            <button id="send">
+                Post
+            </button>
+        </div>
+
+    </section>
+	
+    <script src="js/drag.js"></script>
+    <script src="js/scriptchloe2.js"></script>
+</body>
+</html>

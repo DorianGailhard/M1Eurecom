@@ -1,0 +1,16 @@
+THEORY ProofList IS
+_f(1) & Initialisation.3,(_f(2) => _f(5));
+_f(1) & Initialisation.2,(_f(2) => _f(4));
+_f(1) & Initialisation.1,(_f(2) => _f(3))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+"Invariant is preserved";
+({2}\/{3}) : POW( NATURAL);
+({2}\/{3}\/{4}) : POW( NATURAL);
+({2}\/{3}) : POW( ({2}\/{3}\/{4}))
+END
+&
+THEORY EnumerateX
+END

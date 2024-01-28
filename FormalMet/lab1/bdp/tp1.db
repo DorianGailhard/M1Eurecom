@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\expand_src" old_decomp_dir="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\src">
+        <!-- Definition directory list -->
+        <!-- Proof mechanisms -->
+        <!-- Component file list -->
+        <component_file path="C:/Users/Dorian Gailhard/Desktop/formalmet/tp1" name="Machine2" suffix="mch" user="Dorian">
+            <component name="Machine2" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/Dorian Gailhard/Desktop/formalmet/tp1" name="MyExample" suffix="mch" user="Dorian">
+            <component name="MyExample" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/Dorian Gailhard/Desktop/formalmet/tp1" name="elevator" suffix="mch" user="Dorian">
+            <component name="elevator" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/Dorian Gailhard/Desktop/formalmet/tp1" name="mymachine" suffix="mch" user="Dorian">
+            <component name="mymachine" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/Dorian Gailhard/Desktop/formalmet/tp1" name="utils" suffix="mch" user="Dorian">
+            <component name="utils" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/Dorian Gailhard/Desktop/formalmet/tp1" name="utils_i" suffix="imp" user="Dorian">
+            <component name="utils_i" type="implementation" />
+        </component_file>
+    </project>
+</db_xml>

@@ -1,0 +1,60 @@
+THEORY ProofList IS
+_f(1) & WellDefinednessAssertions.4,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(31) & _f(32) & _f(3) & _f(33) => _f(36));
+_f(1) & WellDefinednessAssertions.3,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(31) & _f(32) & _f(3) & _f(33) => _f(34));
+_f(1) & WellDefinednessAssertions.2,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(6) & _f(3) & _f(7) & _f(33) => _f(35));
+_f(1) & WellDefinednessAssertions.1,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(6) & _f(3) & _f(7) & _f(33) => _f(34));
+_f(1) & AssertionLemmas.12,(_f(3) & _f(12) => _f(24));
+_f(1) & AssertionLemmas.11,(_f(3) & _f(4) & _f(10) & _f(11) & _f(8) & _f(12) => _f(23));
+_f(1) & AssertionLemmas.10,(_f(3) & _f(4) & _f(8) & _f(9) & _f(12) => _f(22));
+_f(1) & AssertionLemmas.9,(_f(6) & _f(3) & _f(7) & _f(12) => _f(21));
+_f(1) & AssertionLemmas.8,(_f(12) => _f(20));
+_f(1) & AssertionLemmas.7,(_f(3) & _f(12) => _f(19));
+_f(1) & AssertionLemmas.6,(_f(3) & _f(12) => _f(18));
+_f(1) & AssertionLemmas.5,(_f(3) & _f(12) => _f(17));
+_f(1) & AssertionLemmas.4,(_f(3) & _f(12) => _f(16));
+_f(1) & AssertionLemmas.3,(_f(3) & _f(4) & _f(5) & _f(12) => _f(15));
+_f(1) & AssertionLemmas.2,(_f(2) & _f(12) => _f(14));
+_f(1) & AssertionLemmas.1,(_f(12) => _f(13))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+xx : INTEGER & 0 <= xx & ((xx) : (NATURAL));
+nn : INTEGER & 0 <= nn & ((nn) : (NATURAL));
+mm : INTEGER & 0 <= mm & ((mm) : (NATURAL));
+not(((nn) = (mm)));
+dd : INTEGER & 0 <= dd & ((dd) : (NATURAL));
+not(((dd) = (0)));
+#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((mm) = ((kk * nn))));
+#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * mm))));
+kk : INTEGER & 0 <= kk & ((kk) : (NATURAL));
+#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((kk) = ((kk * mm))));
+"Assertion is verified";
+#(xx).(((xx) : (NATURAL)) & !(yy).(((((yy) : (INTEGER))) => ((xx <= yy)))));
+#(yy).(((yy) : (NATURAL)) & (xx +1 <= yy));
+(((nn +1 <= mm)) or ((mm +1 <= nn)));
+#(kk).(((kk) : (NATURAL)) & ((((nn) = ((2 * kk)))) or (((nn) = (((2 * kk) + 1))))));
+#(kk).(((kk) : (NATURAL)) & ((nn) = ((kk * nn))));
+#(kk).(((kk) : (NATURAL)) & ((0) = ((kk * nn))));
+#(kk).(((kk) : (NATURAL)) & ((nn) = ((kk * kk))));
+#(kk).(((kk) : (NATURAL)));
+((#(kk).(((kk) : (NATURAL)) & ((nn) = ((kk * dd))))) => (((((nn) mod (dd))) = (0)))) & ((((((nn) mod (dd))) = (0))) => (#(kk).(((kk) : (NATURAL)) & ((nn) = ((kk * dd))))));
+((nn) = (mm));
+#(kk).(((kk) : (NATURAL)) & ((kk) = ((kk * nn))));
+((((((nn) mod (2))) = (0))) => (#(kk).(((kk) : (NATURAL)) & ((nn) = ((kk * 2)))))) & ((#(kk).(((kk) : (NATURAL)) & ((nn) = ((kk * 2))))) => (((((nn) mod (2))) = (0))));
+#(xx).(xx : INTEGER & 0 <= xx & ((xx) : (NATURAL)) & !(yy).(((((yy) : (INTEGER))) => ((xx <= yy)))));
+!(xx).(((xx : INTEGER & 0 <= xx & ((xx) : (NATURAL))) => (#(yy).(yy : INTEGER & 0 <= yy & ((yy) : (NATURAL)) & (xx +1 <= yy)))));
+!(nn,mm).(((nn : INTEGER & 0 <= nn & ((nn) : (NATURAL)) & mm : INTEGER & 0 <= mm & ((mm) : (NATURAL)) & not(((nn) = (mm)))) => ((((nn +1 <= mm)) or ((mm +1 <= nn))))));
+!(nn).(((nn : INTEGER & 0 <= nn & ((nn) : (NATURAL))) => (#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((((nn) = ((2 * kk)))) or (((nn) = (((2 * kk) + 1)))))))));
+!(nn).(((nn : INTEGER & 0 <= nn & ((nn) : (NATURAL))) => (#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * nn)))) & #(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((0) = ((kk * nn)))))));
+#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & !(nn).(((nn : INTEGER & 0 <= nn & ((nn) : (NATURAL))) => (#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * kk))))))));
+!(dd,nn).(((dd : INTEGER & 0 <= dd & ((dd) : (NATURAL)) & nn : INTEGER & 0 <= nn & ((nn) : (NATURAL)) & not(((dd) = (0)))) => (((#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * dd))))) => (((((nn) mod (dd))) = (0)))) & ((((((nn) mod (dd))) = (0))) => (#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * dd)))))))));
+!(nn).(((nn : INTEGER & 0 <= nn & ((nn) : (NATURAL))) => (#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * nn)))) & !(mm).(((mm : INTEGER & 0 <= mm & ((mm) : (NATURAL))) => (((#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((mm) = ((kk * nn)))) & #(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * mm))))) => (((nn) = (mm)))) & !(kk).(((kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & #(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((kk) = ((kk * mm)))) & #(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((mm) = ((kk * nn))))) => (#(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((kk) = ((kk * nn)))))))))))));
+"Assertion is well defined";
+(0 <= nn);
+(1 <= dd);
+(1 <= 2)
+END
+&
+THEORY EnumerateX
+END

@@ -1,0 +1,110 @@
+
+.createAccountText{
+    height: 20px;
+}
+.register{
+    display:none;
+}
+.login-container{
+    height: 80%;
+    aspect-ratio: 1;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(173, 232, 240, 0.788);
+    border:2px solid #b1b1b1;
+    padding: 10px;
+    margin: 10% 20%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+input {
+    font-size: 18px;
+}
+
+.username{
+    margin-top: 20px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius:50vh;
+    background-color: black;
+    border:2px solid #ffffffd7;
+    flex-direction: column;
+}
+
+.username input {
+    color: white;
+}
+
+.inp-name{
+    place-items: center;
+    margin: 8px;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    outline-width: 0;
+    text-align: center;
+}
+.password{
+    margin-top: 20px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius:50vh;
+    background-color: #e4e4e4;
+    border:2px solid #000000d7;
+    flex-direction: column;
+}
+
+.inp-pass{
+    place-items: center;
+    margin: 7px;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    outline-width: 0;
+    text-align: center;
+}
+.logo{
+    width: 100%;
+}
+.img{
+    width:100%;
+}
+
+.create-account:hover{
+    cursor: pointer;
+    background-color: #696969;
+}
+.btn-signin{
+    border-radius: 50vh;
+    background-color: #a5a5a5;
+    color: whitesmoke;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.726);
+    font-size: 17px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.btn-container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-signin:hover{
+    cursor: pointer;
+    background-color: #696969;
+
+}
+
+@media (max-width: 500px) {
+
+.login-container{
+    margin: 0%;
+    }
+    
+}

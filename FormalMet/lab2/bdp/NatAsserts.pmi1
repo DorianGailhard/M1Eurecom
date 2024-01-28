@@ -1,0 +1,21 @@
+THEORY BalanceX IS
+NatAsserts,1,0,0,0,0,0,0;
+AssertionLemmas,1,0,0,0,0,0,0
+END
+&
+THEORY ProofState IS
+Unproved
+END
+&
+THEORY MethodList IS
+?
+END
+&
+THEORY PassList IS
+Force(0),(?; 0; 1)
+END
+&
+THEORY Status IS
+NatAsserts,1,0,0,0,0,0;
+AssertionLemmas,1,0,0,0,0,0
+END

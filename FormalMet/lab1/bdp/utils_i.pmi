@@ -1,0 +1,50 @@
+THEORY BalanceX IS
+utils_i,10,0,0,10,0,0,0;
+Operation_maxi,8,0,0,8,0,0,0;
+Operation_mini,2,0,0,2,0,0,0
+END
+&
+THEORY ProofState IS
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0)
+END
+&
+THEORY MethodList IS
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr
+END
+&
+THEORY PassList IS
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?
+END
+&
+THEORY Status IS
+utils_i,10,0,10,0,0,0;
+Operation_maxi,8,0,8,0,0,0;
+Operation_mini,2,0,2,0,0,0
+END

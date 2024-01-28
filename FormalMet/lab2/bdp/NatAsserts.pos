@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0" author="pmi2Pos">
+<Proof_Obligation>
+<Tag>AssertionLemmas</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is verified</Tag>
+<Proof_State methodList="?" passList="Force(0),(?; 0; 1)" proofState="Unproved"/>
+</Simple_Goal>
+</Proof_Obligation>
+</Proof_Obligations>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="Icones/fontawesome-free-5.15.4-web/css/all.css">
+    <script src="https://kit.fontawesome.com/70de4d365a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <title> 
+        <img src="#" alt="Dance Img"> 
+        Little Steps
+    </title>
+    
+</head>
+<body>
+    <header class="navigation-bar">
+        <div class="logo-container" >
+            <a href="index.html"><img class="logo-image"src="images/logo.png" alt="logo bar de recherche"></a>
+        </div>
+        <div class="navigation-container">
+            <div class="menu-tab home">
+                <a href="index.html"><img src="images/home.png" alt="home" class="turn"></a>
+            </div>
+            <div class="menu-tab messages">
+                <a href="messages.html"><img src="images/messages.png" alt="messages" class="turn" id="messages-logo"></a>
+            </div>
+            <div class="menu-tab notifications">
+                <a><img src="images/bell.png" alt="bell" class="turn"></a>
+            </div>
+            <div class="menu-tab profil">
+                <img src="images/profil.png" alt="profil-image" class="profil-image">
+                <div class="sub-menu">
+                    <a href="drag.html" class="sub-menu-tab">Post New Dance</a>
+                    <a class="sub-menu-tab" id="logout">Log Out</a>
+                </div>
+            </div>
+        </div>  
+    </header>
+
+   
+
+    <section class="search-container">
+        <div class="incontainer">
+            <input type="text" class="search-bar">
+            <button class="search-btn">
+                <img src="images/search.png" alt="search-img" class="searchBTN">
+            </button></div>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <article class="publication">
+            <div class="usertag">
+                <img src="images/Photo1.jpg" alt="username-photo" class="username-photo">
+                <div class="username">Arnaud Minondo</div>  
+            </div>
+            <video src="https://media.istockphoto.com/videos/two-dancers-dancing-in-urban-downtown-city-video-id1278398498" class="video-pub" autoplay controls></video>
+            <div class="reaction-container">
+                <div class="like"> 
+                    <strong>2K</strong>
+                    <p class="likes">likes</p> 
+                </div>
+                <div class="title"> Basics steps of Pop</div> 
+                <div class="reaction-bar">
+                    <div class="reaction-item">
+                        <i class="far fa-comment" alt="comment" id="buttonchloe"></i>
+                    </div>
+                    <div class="reaction-item">
+                        <i class="far fa-share-square" alt="share"></i>
+                    </div>
+                    <div class="reaction-item">
+                        <i class="far fa-heart" alt="heart"></i>
+                    </div> 
+                </div>
+            </div>
+            <div class="reaction-handler"></div>
+            
+
+            <p class="description">
+                Example of a simple dance to enjoy with your friends, useful for parties... Have some style in the dance flore !
+            </p>
+			
+            <div class="comment-text" id="comm">
+            <h4>Comments :</h4>
+                <div class="comments">
+                    <img class="user" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/African_Cape_Daisy_%28Osteospermum_barberiae%29.jpg/640px-African_Cape_Daisy_%28Osteospermum_barberiae%29.jpg">
+                    <div class="commentSection">
+                        <p class="id">
+                            Amélie Benoit
+                        </p>
+                        <p>
+                            So easy to learn, and really useful for those who are not at ease with dancing in the middle of a dance club.
+                        </p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <img class="user" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Zebra_Shark_Baby.jpeg/640px-Zebra_Shark_Baby.jpeg">
+                    <div class="commentSection">
+                        <p class="id">
+                            Nicolas Ducrot
+                        </p>
+                        <p>
+                            Loved the song !
+                        </p>
+                    </div>
+                </div>
+				<div id="commentDiv"></div>
+            </div>
+			
+            <button class="learn-btn">Learn</button>
+        </article>
+
+        <article class="publication">
+            <div class="usertag">
+                <img src="images/Photo1.jpg" alt="username-photo" class="username-photo">
+                <div class="username">Arnaud Minondo</div>  
+            </div>
+            <video src="https://media.istockphoto.com/videos/dancing-on-the-street-video-id1157014352" class="video-pub" autoplay controls></video>
+            <div class="reaction-container">
+                <div class="like"> 
+                    <strong>2K</strong>
+                    <p class="likes">likes</p> 
+                </div>
+                <div class="title"> Basics steps of Pop</div> 
+                <div class="reaction-bar">
+                    <div class="reaction-item">
+                        <i class="far fa-comment" alt="comment" id="buttonchloe"></i>
+                    </div>
+                    <div class="reaction-item">
+                        <i class="far fa-share-square" alt="share"></i>
+                    </div>
+                    <div class="reaction-item">
+                        <i class="far fa-heart" alt="heart"></i>
+                    </div> 
+                </div>
+            </div>
+            <div class="reaction-handler"></div>
+            
+
+            <p class="description">
+                Example of a simple dance to enjoy with your friends, useful for parties... Have some style in the dance flore !
+            </p>
+
+            <div id="commentDiv">You are not logged in, you cannot send a comment. <a href='log-in.html'>Click here to log in</a></div>
+
+            
+            <div class="comment-text" id="commOff">
+            <h4>Comments :</h4>
+                <div class="comments">
+                    <img class="user" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/African_Cape_Daisy_%28Osteospermum_barberiae%29.jpg/640px-African_Cape_Daisy_%28Osteospermum_barberiae%29.jpg">
+                    <div class="commentSection">
+                        <p class="id">
+                            Amélie Benoit
+                        </p>
+                        <p>
+                            So easy to learn, and really useful for those who are not at ease with dancing in the middle of a dance club.
+                        </p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <img class="user" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Zebra_Shark_Baby.jpeg/640px-Zebra_Shark_Baby.jpeg">
+                    <div class="commentSection">
+                        <p class="id">
+                            Nicolas Ducrot
+                        </p>
+                        <p>
+                            Loved the song !
+                        </p>
+                    </div>
+                </div>
+            </div>
+			
+            <button href="learn.html" class="learn-btn">Learn</button>
+        </article>
+
+
+        <article class="publication">
+            <div class="usertag">
+                <img src="images/Photo1.jpg" alt="username-photo" class="username-photo">
+                <div class="username">Arnaud Minondo</div>  
+            </div>
+            <video src="https://media.istockphoto.com/videos/bboy-performing-a-somersault-from-a-fence-video-id973356304" class="video-pub" autoplay controls></video>
+            <div class="reaction-container">
+                <div class="like"> 
+                    <strong>2K</strong>
+                    <p class="likes">likes</p> 
+                </div>
+                <div class="title"> Basics steps of Pop</div> 
+                <div class="reaction-bar">
+                    <div class="reaction-item">
+                        <i class="far fa-comment" alt="comment" id="buttonchloe"></i>
+                    </div>
+                    <div class="reaction-item">
+                        <i class="far fa-share-square" alt="share"></i>
+                    </div>
+                    <div class="reaction-item">
+                        <i class="far fa-heart" alt="heart"></i>
+                    </div> 
+                </div>
+            </div>
+            <div class="reaction-handler"></div>
+            
+
+            <p class="description">
+                Example of a simple dance to enjoy with your friends, useful for parties... Have some style in the dance flore !
+            </p>
+
+            <div id="commentDiv">You are not logged in, you cannot send a comment. <a href='log-in.html'>Click here to log in</a></div>
+
+            <div class="comment-text" id="commOff">
+                <h4>Comments :</h4>
+                <div class="comments">
+                    <img class="user" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/African_Cape_Daisy_%28Osteospermum_barberiae%29.jpg/640px-African_Cape_Daisy_%28Osteospermum_barberiae%29.jpg">
+                    <div class="commentSection">
+                        <p class="id">
+                            Amélie Benoit
+                        </p>
+                        <p>
+                            So easy to learn, and really useful for those who are not at ease with dancing in the middle of a dance club.
+                        </p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <img class="user" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Zebra_Shark_Baby.jpeg/640px-Zebra_Shark_Baby.jpeg">
+                    <div class="commentSection">
+                        <p class="id">
+                            Nicolas Ducrot
+                        </p>
+                        <p>
+                            Loved the song !
+                        </p>
+                    </div>
+                </div>
+            </div>
+			
+            <button href="learn.html" class="learn-btn">Learn</button>
+        </article>
+
+
+
+       
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/scriptchloe.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+	<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAANwKCCzBDHLxzHxdbfnulkyYLWu76iUo&callback=buildInterface&libraries=&v=weekly"
+	async
+	></script>
+</body>
+</html>

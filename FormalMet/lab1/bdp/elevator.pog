@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0">
+    <Define name="B definitions" hash="4145786887">
+        <Exp_Comparison op="=">
+            <Id value="NAT" typref="0"/>
+            <Binary_Exp op=".." typref="0">
+                <Integer_Literal value="0" typref="1"/>
+                <Id value="MAXINT" typref="1"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="INT" typref="0"/>
+            <Binary_Exp op=".." typref="0">
+                <Id value="MININT" typref="1"/>
+                <Id value="MAXINT" typref="1"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+    </Define>
+    <Define name="ctx" hash="0"/>
+    <Define name="seext" hash="0"/>
+    <Define name="lprp" hash="803384172">
+        <Set>
+            <Id value="DOORSTATES" typref="0"/>
+            <Enumerated_Values>
+                <Id value="closed" typref="1"/>
+                <Id value="open" typref="1"/>
+            </Enumerated_Values>
+        </Set>
+        <Exp_Comparison op=":">
+            <Id value="fmin" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:1:1"/>
+            <Id value="INT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:1:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op=":">
+            <Id value="fmax" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:2:1"/>
+            <Id value="INT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:2:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="&lt;i">
+            <Id value="fmin" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:3:1"/>
+            <Id value="fmax" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:3:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:4:1"/>
+            <Binary_Exp op=".." typref="0">
+                <Id value="fmin" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:4:2:1"/>
+                <Id value="fmax" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:4:1:4:2:2"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+    </Define>
+    <Define name="inprp" hash="0"/>
+    <Define name="inext" hash="0"/>
+    <Define name="inv" hash="167629466">
+        <Exp_Comparison op=":">
+            <Id value="currentFloor" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:1:1"/>
+            <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:1:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="&lt;:">
+            <Id value="req" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:2:1"/>
+            <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:2:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op=":">
+            <Id value="door" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:3:1"/>
+            <Id value="DOORSTATES" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:3:2"/>
+        </Exp_Comparison>
+    </Define>
+    <Define name="ass" hash="0"/>
+    <Define name="cst" hash="0"/>
+    <Define name="sets" hash="1932379164">
+        <Set>
+            <Id value="DOORSTATES" typref="0"/>
+            <Enumerated_Values>
+                <Id value="closed" typref="1"/>
+                <Id value="open" typref="1"/>
+            </Enumerated_Values>
+        </Set>
+    </Define>
+    <Proof_Obligation goalHash="68604651">
+        <Tag>Initialisation</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="fmin" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:1:1,C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:6:1:1:2:1"/>
+                    <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:1:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <Proof_Obligation goalHash="1626899722">
+        <Tag>Operation_request</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Definition name="ass"/>
+        <Hypothesis>
+            <Exp_Comparison op=":">
+                <Id value="fl" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:1:2:1:1"/>
+                <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:1:2:1:2"/>
+            </Exp_Comparison>
+        </Hypothesis>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Goal>
+                <Exp_Comparison op="&lt;:">
+                    <Binary_Exp op="\/" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:2:1">
+                        <Id value="req" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:1:3:1:2:1:1"/>
+                        <Nary_Exp op="{" typref="0">
+                            <Id value="fl" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:1:3:1:2:1:2:1"/>
+                        </Nary_Exp>
+                    </Binary_Exp>
+                    <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:2:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <Proof_Obligation goalHash="537925120">
+        <Tag>Operation_move</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Definition name="ass"/>
+        <Hypothesis>
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Id value="req" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:1:1:1:1"/>
+                    <EmptySet typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Hypothesis>
+        <Hypothesis>
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Id value="currentFloor" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:1:1:2:1"/>
+                    <Id value="req" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:1:1:2:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Hypothesis>
+        <Hypothesis>
+            <Exp_Comparison op="=">
+                <Id value="door" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:1:1:3:1"/>
+                <Id value="closed" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:1:1:3:2"/>
+            </Exp_Comparison>
+        </Hypothesis>
+        <Local_Hyp num="1">
+            <Exp_Comparison op=":">
+                <Id value="currentFloor" suffix="1" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:2:1:1:1"/>
+                <Id value="req" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:2:1:2:1"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Ref_Hyp num="1"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="currentFloor" suffix="1" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:1:1,C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:2:2:1:1:1"/>
+                    <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:1:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <Proof_Obligation goalHash="3692175081">
+        <Tag>Operation_toggle</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Definition name="ass"/>
+        <Hypothesis>
+            <Exp_Comparison op=":">
+                <Id value="currentFloor" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:1:1:1"/>
+                <Id value="req" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:1:1:2"/>
+            </Exp_Comparison>
+        </Hypothesis>
+        <Local_Hyp num="1">
+            <Exp_Comparison op="=">
+                <Id value="door" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:2:1:1:1:1"/>
+                <Id value="closed" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:2:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="2">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Id value="door" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:2:1:1:1:1"/>
+                    <Id value="closed" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:2:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Ref_Hyp num="2"/>
+            <Goal>
+                <Exp_Comparison op="&lt;:">
+                    <Binary_Exp op="-s" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:2:1">
+                        <Id value="req" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:2:1:3:1:1:2:1:1"/>
+                        <Nary_Exp op="{" typref="0">
+                            <Id value="currentFloor" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:7:3:2:1:3:1:1:2:1:2:1"/>
+                        </Nary_Exp>
+                    </Binary_Exp>
+                    <Id value="floors" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\tp1\bdp\elevator.bxml:1:5:1:2:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <TypeInfos>
+        <Type id="0">
+            <Unary_Exp op="POW">
+                <Id value="INTEGER"/>
+            </Unary_Exp>
+        </Type>
+        <Type id="1">
+            <Id value="INTEGER"/>
+        </Type>
+    </TypeInfos>
+</Proof_Obligations>

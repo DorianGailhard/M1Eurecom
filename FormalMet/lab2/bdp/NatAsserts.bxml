@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='NatAsserts' type='abstraction' position='true' semantic='true' b0check='false'>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<Assertions>
+<Attr>
+<Pos l='6' c='1' s='10'/>
+</Attr>
+<Quantified_Pred type='#'>
+<Attr>
+<Pos l='8' c='4' s='1'/>
+</Attr>
+<Variables>
+<Id value='xx' typref='1'>
+<Attr>
+<Pos l='8' c='2' s='2'/>
+</Attr>
+</Id>
+</Variables>
+<Body>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='8' c='8' s='1'/>
+</Attr>
+<Id value='xx' typref='1'>
+<Attr>
+<Pos l='8' c='6' s='2'/>
+</Attr>
+</Id>
+<Id value='NATURAL' typref='2'>
+<Attr>
+<Pos l='8' c='9' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Quantified_Pred type='!'>
+<Attr>
+<Pos l='8' c='22' s='1'/>
+</Attr>
+<Variables>
+<Id value='yy' typref='1'>
+<Attr>
+<Pos l='8' c='20' s='2'/>
+</Attr>
+</Id>
+</Variables>
+<Body>
+<Binary_Pred op='=&gt;'>
+<Attr>
+<Pos l='8' c='35' s='2'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='8' c='26' s='1'/>
+</Attr>
+<Id value='yy' typref='1'>
+<Attr>
+<Pos l='8' c='24' s='2'/>
+</Attr>
+</Id>
+<Id value='INTEGER' typref='2'>
+<Attr>
+<Pos l='8' c='27' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;=i'>
+<Attr>
+<Pos l='8' c='40' s='2'/>
+</Attr>
+<Id value='xx' typref='1'>
+<Attr>
+<Pos l='8' c='38' s='2'/>
+</Attr>
+</Id>
+<Id value='yy' typref='1'>
+<Attr>
+<Pos l='8' c='42' s='2'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Body>
+</Quantified_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Assertions>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

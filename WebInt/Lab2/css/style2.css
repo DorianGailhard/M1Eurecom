@@ -1,0 +1,101 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20pt;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e4e4;
+    flex-direction: column;
+}
+.createAccountText{
+    height: 20px;
+}
+.register{
+    display:none;
+}
+.login-container{
+    height: 80%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border:2px solid #b1b1b1;
+    padding: 10px;
+}
+.username{
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius:50vh;
+    background-color: #e4e4e4;
+    border:2px solid #b1b1b1;
+    flex-direction: column;
+}
+
+.inp-name{
+    place-items: center;
+    margin: 10px;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    outline-width: 0;
+    text-align: center;
+}
+.password{
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius:50vh;
+    background-color: #e4e4e4;
+    border:2px solid #b1b1b1;
+    flex-direction: column;
+}
+
+.inp-pass{
+    place-items: center;
+    margin: 10px;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    outline-width: 0;
+    text-align: center;
+}
+.logo{
+    width: 100%;
+}
+.img{
+    width:100%;
+}
+
+.create-account:hover{
+    cursor: pointer;
+    background-color: #696969;
+
+}
+.btn-signin{
+
+    border-radius: 50vh;
+    background-color: #a5a5a5;
+    color: whitesmoke;
+    padding: 10px;
+    border: 2px solid #696969;
+}
+.btn-container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-signin:hover{
+    cursor: pointer;
+    background-color: #696969;
+
+}

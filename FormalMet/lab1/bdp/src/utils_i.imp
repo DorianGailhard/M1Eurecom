@@ -1,0 +1,19 @@
+﻿/* utils_i
+ * Author: Dorian Gailhard
+ * Creation date: 03/04/2022
+ */
+IMPLEMENTATION
+    utils_i
+    REFINES
+    utils
+    OPERATIONS
+    res <-- mini ( xx , yy ) = IF xx >= yy
+    THEN res := yy ELSE res := xx END ;
+    res <-- maxi ( xx , yy , zz ) =
+    BEGIN
+    IF xx >= yy THEN res := xx END ;
+    IF xx <= yy THEN res := yy END ;
+    IF res <= zz THEN res := zz
+    END
+    END
+END

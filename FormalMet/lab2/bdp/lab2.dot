@@ -1,0 +1,6 @@
+digraph {
+NatAsserts [ label=" NatAsserts " shape= box ]
+NatAsserts2 [ label=" NatAsserts2 " shape= box ]
+SetAsserts [ label=" SetAsserts " shape= box ]
+
+}

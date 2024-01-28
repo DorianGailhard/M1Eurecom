@@ -1,0 +1,18 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(6) & WellDefinedness_maximum.1,(_f(7) => _f(8));
+_f(1) & _f(2) & _f(3) & Operation_lire.1,(_f(4) => _f(5))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+ss : POW( NATURAL);
+nn : INTEGER & 0 <= nn & ((nn) : (NATURAL));
+"Invariant is preserved";
+((ss) \/ (({nn}))) : POW( NATURAL);
+not(((ss) = ({})));
+"Operation is well defined";
+((((ss) /\ (NATURAL))) : (FIN(NATURAL)))
+END
+&
+THEORY EnumerateX
+END

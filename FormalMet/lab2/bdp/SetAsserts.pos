@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0" author="pmi2Pos">
+<Proof_Obligation>
+<Tag>AssertionLemmas</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is verified</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessAssertions</Tag>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; 0; 1; 2; 3)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Assertion is well defined</Tag>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+</Proof_Obligations>

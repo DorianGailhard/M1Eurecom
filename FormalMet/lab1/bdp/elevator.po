@@ -1,0 +1,28 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(5) & _f(13) & Operation_toggle.1,(_f(14) & _f(3) => _f(15));
+_f(1) & _f(2) & _f(5) & _f(8) & _f(9) & _f(10) & Operation_move.1,(_f(11) & _f(3) => _f(12));
+_f(1) & _f(2) & _f(5) & _f(6) & Operation_request.1,(_f(3) => _f(7));
+_f(1) & _f(2) & Initialisation.1,(_f(3) => _f(4))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+((1..2)*{DOORSTATES}): FIN(NATURAL*{DOORSTATES})& not(((1..2)*{DOORSTATES}) = {}) & ((fmin) : (INT)) & ((fmax) : (INT)) & (fmin +1 <= fmax) & ((floors) = (((fmin) .. (fmax))));
+"Invariant is preserved";
+((fmin) : (floors));
+((currentFloor) : (floors)) & req : POW( floors) & ((door) : (((1..2)*{DOORSTATES})));
+((fl) : (floors));
+((req) \/ (({fl}))) : POW( floors);
+not(((req) = ({})));
+not(((currentFloor) : (req)));
+((door) = ((1|->DOORSTATES)));
+((currentFloor$1) : (req));
+((currentFloor$1) : (floors));
+((currentFloor) : (req));
+not(((door) = ((1|->DOORSTATES))));
+(req - ({currentFloor})) : POW( floors)
+END
+&
+THEORY EnumerateX IS
+DOORSTATES == {closed,open}
+END

@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0">
+    <Define name="B definitions" hash="4145786887">
+        <Exp_Comparison op="=">
+            <Id value="NAT" typref="0"/>
+            <Binary_Exp op=".." typref="0">
+                <Integer_Literal value="0" typref="1"/>
+                <Id value="MAXINT" typref="1"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="INT" typref="0"/>
+            <Binary_Exp op=".." typref="0">
+                <Id value="MININT" typref="1"/>
+                <Id value="MAXINT" typref="1"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+    </Define>
+    <Define name="ctx" hash="0"/>
+    <Define name="seext" hash="0"/>
+    <Define name="lprp" hash="92180210">
+        <Set>
+            <Id value="UNIVERSE" typref="0"/>
+        </Set>
+    </Define>
+    <Define name="inprp" hash="0"/>
+    <Define name="inext" hash="0"/>
+    <Define name="inv" hash="0"/>
+    <Define name="ass" hash="551017573">
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="SS" typref="0"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:1:1"/>
+                        <Unary_Exp op="FIN" typref="2">
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:1:2:1"/>
+                        </Unary_Exp>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="TT" typref="0"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:1:1"/>
+                                    <Unary_Exp op="FIN" typref="2">
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:1:2:1"/>
+                                    </Unary_Exp>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="&lt;&lt;:">
+                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:2:1"/>
+                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:2:2"/>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="SS" typref="0"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:1:1"/>
+                        <Unary_Exp op="FIN" typref="2">
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:1:2:1"/>
+                        </Unary_Exp>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="aa" typref="1"/>
+                            <Id value="bb" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="aa" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:1:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Exp_Comparison op=":">
+                                    <Id value="bb" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:2:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:2:2"/>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="&lt;:">
+                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:1"/>
+                                    <Binary_Exp op=".." typref="0">
+                                        <Id value="aa" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:2:1"/>
+                                        <Id value="bb" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:2:2"/>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="nn" typref="1"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:1:1"/>
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:1:2"/>
+                        </Exp_Comparison>
+                        <Unary_Pred op="not">
+                            <Exp_Comparison op="=">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:2:1"/>
+                                <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:2:2"/>
+                            </Exp_Comparison>
+                        </Unary_Pred>
+                    </Nary_Pred>
+                    <Exp_Comparison op=":">
+                        <Quantified_Set typref="0">
+                            <Variables>
+                                <Id value="kk" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Quantified_Pred type="#">
+                                        <Variables>
+                                            <Id value="kk" typref="1"/>
+                                        </Variables>
+                                        <Body>
+                                            <Nary_Pred op="&amp;">
+                                                <Exp_Comparison op=":">
+                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:1:1"/>
+                                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:1:2"/>
+                                                </Exp_Comparison>
+                                                <Exp_Comparison op="=">
+                                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:1"/>
+                                                    <Binary_Exp op="*i" typref="1">
+                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:2:1"/>
+                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:2:2"/>
+                                                    </Binary_Exp>
+                                                </Exp_Comparison>
+                                            </Nary_Pred>
+                                        </Body>
+                                    </Quantified_Pred>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Set>
+                        <Unary_Exp op="FIN" typref="2">
+                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:2:1"/>
+                        </Unary_Exp>
+                    </Exp_Comparison>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="SS" typref="0"/>
+                <Id value="TT" typref="0"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Exp_Comparison op=":">
+                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Exp_Comparison op="&lt;:">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:1"/>
+                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:2"/>
+                        </Exp_Comparison>
+                    </Nary_Pred>
+                    <Exp_Comparison op="&lt;=i">
+                        <Unary_Exp op="card" typref="1">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:1:1"/>
+                        </Unary_Exp>
+                        <Unary_Exp op="card" typref="1">
+                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:2:1"/>
+                        </Unary_Exp>
+                    </Exp_Comparison>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="SS" typref="0"/>
+                <Id value="TT" typref="0"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:1:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Exp_Comparison op=":">
+                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:2:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:2:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                    </Nary_Pred>
+                    <Binary_Pred op="&lt;=&gt;">
+                        <Exp_Comparison op="&lt;=i">
+                            <Unary_Exp op="card" typref="1">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:1:1"/>
+                            </Unary_Exp>
+                            <Unary_Exp op="card" typref="1">
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="ff" typref="3"/>
+                            </Variables>
+                            <Body>
+                                <Exp_Comparison op=":">
+                                    <Id value="ff" typref="3" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:1"/>
+                                    <Binary_Exp op="&gt;-&gt;" typref="4">
+                                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:2:1"/>
+                                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:2:2"/>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="SS" typref="0"/>
+                <Id value="TT" typref="0"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op=":">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:1:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Exp_Comparison op=":">
+                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:2:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:2:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                    </Nary_Pred>
+                    <Binary_Pred op="&lt;=&gt;">
+                        <Exp_Comparison op="&gt;=i">
+                            <Unary_Exp op="card" typref="1">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:1:1"/>
+                            </Unary_Exp>
+                            <Unary_Exp op="card" typref="1">
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="ff" typref="3"/>
+                            </Variables>
+                            <Body>
+                                <Exp_Comparison op=":">
+                                    <Id value="ff" typref="3" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:1"/>
+                                    <Binary_Exp op="--&gt;&gt;" typref="4">
+                                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:2:1"/>
+                                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:2:2"/>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="SS" typref="0"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Exp_Comparison op=":">
+                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:1:1"/>
+                        <Unary_Exp op="POW" typref="2">
+                            <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:1:2:1"/>
+                        </Unary_Exp>
+                    </Exp_Comparison>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op="&lt;:">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:1:1"/>
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:1:2"/>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="!">
+                            <Variables>
+                                <Id value="TT" typref="0"/>
+                            </Variables>
+                            <Body>
+                                <Binary_Pred op="=&gt;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:1:1"/>
+                                        <Unary_Exp op="POW" typref="2">
+                                            <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:1:2:1"/>
+                                        </Unary_Exp>
+                                    </Exp_Comparison>
+                                    <Nary_Pred op="&amp;">
+                                        <Binary_Pred op="=&gt;">
+                                            <Nary_Pred op="&amp;">
+                                                <Exp_Comparison op="&lt;:">
+                                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:1:1"/>
+                                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:1:2"/>
+                                                </Exp_Comparison>
+                                                <Exp_Comparison op="&lt;:">
+                                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:2:1"/>
+                                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:2:2"/>
+                                                </Exp_Comparison>
+                                            </Nary_Pred>
+                                            <Exp_Comparison op="=">
+                                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:2:1"/>
+                                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:2:2"/>
+                                            </Exp_Comparison>
+                                        </Binary_Pred>
+                                        <Quantified_Pred type="!">
+                                            <Variables>
+                                                <Id value="UU" typref="0"/>
+                                            </Variables>
+                                            <Body>
+                                                <Binary_Pred op="=&gt;">
+                                                    <Nary_Pred op="&amp;">
+                                                        <Exp_Comparison op=":">
+                                                            <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:1:1"/>
+                                                            <Unary_Exp op="POW" typref="2">
+                                                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:1:2:1"/>
+                                                            </Unary_Exp>
+                                                        </Exp_Comparison>
+                                                        <Exp_Comparison op="&lt;:">
+                                                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:2:1"/>
+                                                            <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:2:2"/>
+                                                        </Exp_Comparison>
+                                                        <Exp_Comparison op="&lt;:">
+                                                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:3:1"/>
+                                                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:3:2"/>
+                                                        </Exp_Comparison>
+                                                    </Nary_Pred>
+                                                    <Exp_Comparison op="&lt;:">
+                                                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:2:1"/>
+                                                        <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:2:2"/>
+                                                    </Exp_Comparison>
+                                                </Binary_Pred>
+                                            </Body>
+                                        </Quantified_Pred>
+                                    </Nary_Pred>
+                                </Binary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Nary_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+        <Quantified_Pred type="!">
+            <Variables>
+                <Id value="ff" typref="5"/>
+            </Variables>
+            <Body>
+                <Binary_Pred op="=&gt;">
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="SS" typref="2"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op="&lt;:">
+                                    <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:1"/>
+                                    <Unary_Exp op="POW" typref="2">
+                                        <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:2:1"/>
+                                    </Unary_Exp>
+                                </Exp_Comparison>
+                                <Exp_Comparison op=":">
+                                    <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:1"/>
+                                    <Binary_Exp op="+-&gt;" typref="6">
+                                        <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:1"/>
+                                        <Unary_Exp op="POW" typref="2">
+                                            <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:2:1"/>
+                                        </Unary_Exp>
+                                    </Binary_Exp>
+                                </Exp_Comparison>
+                                <Quantified_Pred type="!">
+                                    <Variables>
+                                        <Id value="xx" typref="0"/>
+                                        <Id value="yy" typref="0"/>
+                                    </Variables>
+                                    <Body>
+                                        <Binary_Pred op="=&gt;">
+                                            <Nary_Pred op="&amp;">
+                                                <Exp_Comparison op=":">
+                                                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:1"/>
+                                                    <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:2"/>
+                                                </Exp_Comparison>
+                                                <Exp_Comparison op=":">
+                                                    <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:1"/>
+                                                    <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:2"/>
+                                                </Exp_Comparison>
+                                                <Exp_Comparison op="&lt;:">
+                                                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:1"/>
+                                                    <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:2"/>
+                                                </Exp_Comparison>
+                                            </Nary_Pred>
+                                            <Exp_Comparison op="&lt;:">
+                                                <Binary_Exp op="(" typref="0">
+                                                    <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:1"/>
+                                                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:2"/>
+                                                </Binary_Exp>
+                                                <Binary_Exp op="(" typref="0">
+                                                    <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:1"/>
+                                                    <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:2"/>
+                                                </Binary_Exp>
+                                            </Exp_Comparison>
+                                        </Binary_Pred>
+                                    </Body>
+                                </Quantified_Pred>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="xx" typref="0"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:1:1"/>
+                                    <Unary_Exp op="POW" typref="2">
+                                        <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:1:2:1"/>
+                                    </Unary_Exp>
+                                </Exp_Comparison>
+                                <Exp_Comparison op="=">
+                                    <Binary_Exp op="(" typref="0">
+                                        <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:1"/>
+                                        <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:2"/>
+                                    </Binary_Exp>
+                                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:2"/>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Body>
+        </Quantified_Pred>
+    </Define>
+    <Define name="cst" hash="0"/>
+    <Define name="sets" hash="92180210">
+        <Set>
+            <Id value="UNIVERSE" typref="0"/>
+        </Set>
+    </Define>
+    <Proof_Obligation goalHash="397208359">
+        <Tag>AssertionLemmas</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Local_Hyp num="1">
+            <Exp_Comparison op=":">
+                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:1:1"/>
+                <Unary_Exp op="FIN" typref="2">
+                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="2">
+            <Exp_Comparison op=":">
+                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:1:1"/>
+                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="3">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:2:1"/>
+                    <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:2:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="4">
+            <Exp_Comparison op=":">
+                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:1"/>
+                <Unary_Exp op="FIN" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="5">
+            <Exp_Comparison op=":">
+                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:1"/>
+                <Unary_Exp op="FIN" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="6">
+            <Exp_Comparison op="&lt;:">
+                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:1"/>
+                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="7">
+            <Exp_Comparison op=":">
+                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:1:1"/>
+                <Unary_Exp op="POW" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="8">
+            <Exp_Comparison op=":">
+                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:1:1"/>
+                <Unary_Exp op="POW" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="9">
+            <Exp_Comparison op="&lt;:">
+                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:2:1"/>
+                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:2:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="10">
+            <Exp_Comparison op=":">
+                <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:1:1"/>
+                <Unary_Exp op="POW" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="11">
+            <Exp_Comparison op="&lt;:">
+                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:2:1"/>
+                <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:2:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="12">
+            <Quantified_Pred type="#">
+                <Variables>
+                    <Id value="SS" typref="2"/>
+                </Variables>
+                <Body>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op="&lt;:">
+                            <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:1"/>
+                            <Unary_Exp op="POW" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Exp_Comparison op=":">
+                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:1"/>
+                            <Binary_Exp op="+-&gt;" typref="6">
+                                <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:1"/>
+                                <Unary_Exp op="POW" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:2:1"/>
+                                </Unary_Exp>
+                            </Binary_Exp>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="!">
+                            <Variables>
+                                <Id value="xx" typref="0"/>
+                                <Id value="yy" typref="0"/>
+                            </Variables>
+                            <Body>
+                                <Binary_Pred op="=&gt;">
+                                    <Nary_Pred op="&amp;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:1"/>
+                                            <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op=":">
+                                            <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:1"/>
+                                            <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="&lt;:">
+                                            <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:1"/>
+                                            <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:2"/>
+                                        </Exp_Comparison>
+                                    </Nary_Pred>
+                                    <Exp_Comparison op="&lt;:">
+                                        <Binary_Exp op="(" typref="0">
+                                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:1"/>
+                                            <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:2"/>
+                                        </Binary_Exp>
+                                        <Binary_Exp op="(" typref="0">
+                                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:1"/>
+                                            <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Binary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Nary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="1"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="TT" typref="0"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:1:1"/>
+                                <Unary_Exp op="FIN" typref="2">
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:1:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="&lt;&lt;:">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:2:1"/>
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:2:2"/>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="1"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="aa" typref="1"/>
+                        <Id value="bb" typref="1"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="aa" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:1:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op=":">
+                                <Id value="bb" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:2:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:2:2"/>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="&lt;:">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:1"/>
+                                <Binary_Exp op=".." typref="0">
+                                    <Id value="aa" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:2:1"/>
+                                    <Id value="bb" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:2:2"/>
+                                </Binary_Exp>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Quantified_Set typref="0">
+                        <Variables>
+                            <Id value="kk" typref="1"/>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op="&amp;">
+                                <Exp_Comparison op=":">
+                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:1:1"/>
+                                    <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:1:2"/>
+                                </Exp_Comparison>
+                                <Quantified_Pred type="#">
+                                    <Variables>
+                                        <Id value="kk" typref="1"/>
+                                    </Variables>
+                                    <Body>
+                                        <Nary_Pred op="&amp;">
+                                            <Exp_Comparison op=":">
+                                                <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:1:1"/>
+                                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:1:2"/>
+                                            </Exp_Comparison>
+                                            <Exp_Comparison op="=">
+                                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:1"/>
+                                                <Binary_Exp op="*i" typref="1">
+                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:2:1"/>
+                                                    <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:2:2"/>
+                                                </Binary_Exp>
+                                            </Exp_Comparison>
+                                        </Nary_Pred>
+                                    </Body>
+                                </Quantified_Pred>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Set>
+                    <Unary_Exp op="FIN" typref="2">
+                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:2:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="6"/>
+            <Goal>
+                <Exp_Comparison op="&lt;=i">
+                    <Unary_Exp op="card" typref="1">
+                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:1:1"/>
+                    </Unary_Exp>
+                    <Unary_Exp op="card" typref="1">
+                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:2:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Goal>
+                <Binary_Pred op="&lt;=&gt;">
+                    <Exp_Comparison op="&lt;=i">
+                        <Unary_Exp op="card" typref="1">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:1:1"/>
+                        </Unary_Exp>
+                        <Unary_Exp op="card" typref="1">
+                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:2:1"/>
+                        </Unary_Exp>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="ff" typref="3"/>
+                        </Variables>
+                        <Body>
+                            <Exp_Comparison op=":">
+                                <Id value="ff" typref="3" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:1"/>
+                                <Binary_Exp op="&gt;-&gt;" typref="4">
+                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:2:1"/>
+                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:2:2"/>
+                                </Binary_Exp>
+                            </Exp_Comparison>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Goal>
+                <Binary_Pred op="&lt;=&gt;">
+                    <Exp_Comparison op="&gt;=i">
+                        <Unary_Exp op="card" typref="1">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:1:1"/>
+                        </Unary_Exp>
+                        <Unary_Exp op="card" typref="1">
+                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:2:1"/>
+                        </Unary_Exp>
+                    </Exp_Comparison>
+                    <Quantified_Pred type="#">
+                        <Variables>
+                            <Id value="ff" typref="3"/>
+                        </Variables>
+                        <Body>
+                            <Exp_Comparison op=":">
+                                <Id value="ff" typref="3" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:1"/>
+                                <Binary_Exp op="--&gt;&gt;" typref="4">
+                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:2:1"/>
+                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:2:2"/>
+                                </Binary_Exp>
+                            </Exp_Comparison>
+                        </Body>
+                    </Quantified_Pred>
+                </Binary_Pred>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="6"/>
+            <Ref_Hyp num="9"/>
+            <Goal>
+                <Exp_Comparison op="=">
+                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:2:1"/>
+                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:2:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="11"/>
+            <Ref_Hyp num="6"/>
+            <Goal>
+                <Exp_Comparison op="&lt;:">
+                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:2:1"/>
+                    <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:2:2"/>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is verified</Tag>
+            <Ref_Hyp num="12"/>
+            <Goal>
+                <Quantified_Pred type="#">
+                    <Variables>
+                        <Id value="xx" typref="0"/>
+                    </Variables>
+                    <Body>
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:1:1"/>
+                                <Unary_Exp op="POW" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:1:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="=">
+                                <Binary_Exp op="(" typref="0">
+                                    <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:1"/>
+                                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:2"/>
+                                </Binary_Exp>
+                                <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:2"/>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                    </Body>
+                </Quantified_Pred>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <Proof_Obligation goalHash="551017573">
+        <Tag>WellDefinednessAssertions</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Local_Hyp num="1">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="SS" typref="0"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Exp_Comparison op=":">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:1:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="TT" typref="0"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:1:1"/>
+                                        <Unary_Exp op="FIN" typref="2">
+                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:1:2:1"/>
+                                        </Unary_Exp>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="&lt;&lt;:">
+                                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:2:1"/>
+                                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:1:2:1:2:2:1:2:2"/>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="2">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="SS" typref="0"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Exp_Comparison op=":">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:1:1"/>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="#">
+                            <Variables>
+                                <Id value="aa" typref="1"/>
+                                <Id value="bb" typref="1"/>
+                            </Variables>
+                            <Body>
+                                <Nary_Pred op="&amp;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="aa" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:1:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:1:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op=":">
+                                        <Id value="bb" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:2:1"/>
+                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:2:2"/>
+                                    </Exp_Comparison>
+                                    <Exp_Comparison op="&lt;:">
+                                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:1"/>
+                                        <Binary_Exp op=".." typref="0">
+                                            <Id value="aa" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:2:1"/>
+                                            <Id value="bb" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:2:2:1:2:2:1:3:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Nary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="3">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="nn" typref="1"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:1:1"/>
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:1:2"/>
+                            </Exp_Comparison>
+                            <Unary_Pred op="not">
+                                <Exp_Comparison op="=">
+                                    <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:2:1"/>
+                                    <Integer_Literal value="0" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:1:2:2"/>
+                                </Exp_Comparison>
+                            </Unary_Pred>
+                        </Nary_Pred>
+                        <Exp_Comparison op=":">
+                            <Quantified_Set typref="0">
+                                <Variables>
+                                    <Id value="kk" typref="1"/>
+                                </Variables>
+                                <Body>
+                                    <Nary_Pred op="&amp;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:1:1"/>
+                                            <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Quantified_Pred type="#">
+                                            <Variables>
+                                                <Id value="kk" typref="1"/>
+                                            </Variables>
+                                            <Body>
+                                                <Nary_Pred op="&amp;">
+                                                    <Exp_Comparison op=":">
+                                                        <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:1:1"/>
+                                                        <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:1:2"/>
+                                                    </Exp_Comparison>
+                                                    <Exp_Comparison op="=">
+                                                        <Id value="nn" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:1"/>
+                                                        <Binary_Exp op="*i" typref="1">
+                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:2:1"/>
+                                                            <Id value="kk" typref="1" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:1:2:1:2:2:1:2:2:2"/>
+                                                        </Binary_Exp>
+                                                    </Exp_Comparison>
+                                                </Nary_Pred>
+                                            </Body>
+                                        </Quantified_Pred>
+                                    </Nary_Pred>
+                                </Body>
+                            </Quantified_Set>
+                            <Unary_Exp op="FIN" typref="2">
+                                <Id value="NATURAL" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:3:2:1:2:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="4">
+            <Exp_Comparison op=":">
+                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:1"/>
+                <Unary_Exp op="FIN" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="5">
+            <Exp_Comparison op=":">
+                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:1"/>
+                <Unary_Exp op="FIN" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="6">
+            <Exp_Comparison op="&lt;:">
+                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:1"/>
+                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="7">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="SS" typref="0"/>
+                    <Id value="TT" typref="0"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:1"/>
+                                <Unary_Exp op="FIN" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:1:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Exp_Comparison op=":">
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:1"/>
+                                <Unary_Exp op="FIN" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:2:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Exp_Comparison op="&lt;:">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:1"/>
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:1:3:2"/>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                        <Exp_Comparison op="&lt;=i">
+                            <Unary_Exp op="card" typref="1">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:1:1"/>
+                            </Unary_Exp>
+                            <Unary_Exp op="card" typref="1">
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="8">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="SS" typref="0"/>
+                    <Id value="TT" typref="0"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:1:1"/>
+                                <Unary_Exp op="FIN" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:1:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Exp_Comparison op=":">
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:2:1"/>
+                                <Unary_Exp op="FIN" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:1:2:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                        <Binary_Pred op="&lt;=&gt;">
+                            <Exp_Comparison op="&lt;=i">
+                                <Unary_Exp op="card" typref="1">
+                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:1:1"/>
+                                </Unary_Exp>
+                                <Unary_Exp op="card" typref="1">
+                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Quantified_Pred type="#">
+                                <Variables>
+                                    <Id value="ff" typref="3"/>
+                                </Variables>
+                                <Body>
+                                    <Exp_Comparison op=":">
+                                        <Id value="ff" typref="3" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:1"/>
+                                        <Binary_Exp op="&gt;-&gt;" typref="4">
+                                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:2:1"/>
+                                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:2:2:1:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Body>
+                            </Quantified_Pred>
+                        </Binary_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="9">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="SS" typref="0"/>
+                    <Id value="TT" typref="0"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Nary_Pred op="&amp;">
+                            <Exp_Comparison op=":">
+                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:1:1"/>
+                                <Unary_Exp op="FIN" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:1:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Exp_Comparison op=":">
+                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:2:1"/>
+                                <Unary_Exp op="FIN" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:1:2:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                        </Nary_Pred>
+                        <Binary_Pred op="&lt;=&gt;">
+                            <Exp_Comparison op="&gt;=i">
+                                <Unary_Exp op="card" typref="1">
+                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:1:1"/>
+                                </Unary_Exp>
+                                <Unary_Exp op="card" typref="1">
+                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:2:1"/>
+                                </Unary_Exp>
+                            </Exp_Comparison>
+                            <Quantified_Pred type="#">
+                                <Variables>
+                                    <Id value="ff" typref="3"/>
+                                </Variables>
+                                <Body>
+                                    <Exp_Comparison op=":">
+                                        <Id value="ff" typref="3" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:1"/>
+                                        <Binary_Exp op="--&gt;&gt;" typref="4">
+                                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:2:1"/>
+                                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:2:2:1:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Body>
+                            </Quantified_Pred>
+                        </Binary_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="10">
+            <Quantified_Pred type="!">
+                <Variables>
+                    <Id value="SS" typref="0"/>
+                </Variables>
+                <Body>
+                    <Binary_Pred op="=&gt;">
+                        <Exp_Comparison op=":">
+                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:1:1"/>
+                            <Unary_Exp op="POW" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="!">
+                            <Variables>
+                                <Id value="TT" typref="0"/>
+                            </Variables>
+                            <Body>
+                                <Binary_Pred op="=&gt;">
+                                    <Exp_Comparison op=":">
+                                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:1:1"/>
+                                        <Unary_Exp op="POW" typref="2">
+                                            <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:1:2:1"/>
+                                        </Unary_Exp>
+                                    </Exp_Comparison>
+                                    <Nary_Pred op="&amp;">
+                                        <Binary_Pred op="=&gt;">
+                                            <Nary_Pred op="&amp;">
+                                                <Exp_Comparison op="&lt;:">
+                                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:1:1"/>
+                                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:1:2"/>
+                                                </Exp_Comparison>
+                                                <Exp_Comparison op="&lt;:">
+                                                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:2:1"/>
+                                                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:1:2:2"/>
+                                                </Exp_Comparison>
+                                            </Nary_Pred>
+                                            <Exp_Comparison op="=">
+                                                <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:2:1"/>
+                                                <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:1:2:2"/>
+                                            </Exp_Comparison>
+                                        </Binary_Pred>
+                                        <Quantified_Pred type="!">
+                                            <Variables>
+                                                <Id value="UU" typref="0"/>
+                                            </Variables>
+                                            <Body>
+                                                <Binary_Pred op="=&gt;">
+                                                    <Nary_Pred op="&amp;">
+                                                        <Exp_Comparison op=":">
+                                                            <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:1:1"/>
+                                                            <Unary_Exp op="POW" typref="2">
+                                                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:1:2:1"/>
+                                                            </Unary_Exp>
+                                                        </Exp_Comparison>
+                                                        <Exp_Comparison op="&lt;:">
+                                                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:2:1"/>
+                                                            <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:2:2"/>
+                                                        </Exp_Comparison>
+                                                        <Exp_Comparison op="&lt;:">
+                                                            <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:3:1"/>
+                                                            <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:1:3:2"/>
+                                                        </Exp_Comparison>
+                                                    </Nary_Pred>
+                                                    <Exp_Comparison op="&lt;:">
+                                                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:2:1"/>
+                                                        <Id value="UU" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:7:2:1:2:2:2:1:2:2:2:1:2:2"/>
+                                                    </Exp_Comparison>
+                                                </Binary_Pred>
+                                            </Body>
+                                        </Quantified_Pred>
+                                    </Nary_Pred>
+                                </Binary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Binary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="11">
+            <Exp_Comparison op="&lt;:">
+                <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:1"/>
+                <Unary_Exp op="POW" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="12">
+            <Exp_Comparison op=":">
+                <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:1"/>
+                <Binary_Exp op="+-&gt;" typref="6">
+                    <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:1"/>
+                    <Unary_Exp op="POW" typref="2">
+                        <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:2:1"/>
+                    </Unary_Exp>
+                </Binary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="13">
+            <Exp_Comparison op=":">
+                <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:1"/>
+                <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="14">
+            <Exp_Comparison op=":">
+                <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:1"/>
+                <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="15">
+            <Exp_Comparison op="&lt;:">
+                <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:1"/>
+                <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="16">
+            <Quantified_Pred type="#">
+                <Variables>
+                    <Id value="SS" typref="2"/>
+                </Variables>
+                <Body>
+                    <Nary_Pred op="&amp;">
+                        <Exp_Comparison op="&lt;:">
+                            <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:1"/>
+                            <Unary_Exp op="POW" typref="2">
+                                <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:1:2:1"/>
+                            </Unary_Exp>
+                        </Exp_Comparison>
+                        <Exp_Comparison op=":">
+                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:1"/>
+                            <Binary_Exp op="+-&gt;" typref="6">
+                                <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:1"/>
+                                <Unary_Exp op="POW" typref="2">
+                                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:2:2:2:1"/>
+                                </Unary_Exp>
+                            </Binary_Exp>
+                        </Exp_Comparison>
+                        <Quantified_Pred type="!">
+                            <Variables>
+                                <Id value="xx" typref="0"/>
+                                <Id value="yy" typref="0"/>
+                            </Variables>
+                            <Body>
+                                <Binary_Pred op="=&gt;">
+                                    <Nary_Pred op="&amp;">
+                                        <Exp_Comparison op=":">
+                                            <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:1"/>
+                                            <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:1:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op=":">
+                                            <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:1"/>
+                                            <Id value="SS" typref="2" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:2:2"/>
+                                        </Exp_Comparison>
+                                        <Exp_Comparison op="&lt;:">
+                                            <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:1"/>
+                                            <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:1:3:2"/>
+                                        </Exp_Comparison>
+                                    </Nary_Pred>
+                                    <Exp_Comparison op="&lt;:">
+                                        <Binary_Exp op="(" typref="0">
+                                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:1"/>
+                                            <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:2"/>
+                                        </Binary_Exp>
+                                        <Binary_Exp op="(" typref="0">
+                                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:1"/>
+                                            <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:2"/>
+                                        </Binary_Exp>
+                                    </Exp_Comparison>
+                                </Binary_Pred>
+                            </Body>
+                        </Quantified_Pred>
+                    </Nary_Pred>
+                </Body>
+            </Quantified_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="17">
+            <Exp_Comparison op=":">
+                <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:1:1"/>
+                <Unary_Exp op="POW" typref="2">
+                    <Id value="UNIVERSE" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:1:2:1"/>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="6"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:1:1"/>
+                    <Unary_Exp op="FIN" typref="2">
+                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:1:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Ref_Hyp num="6"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:2:1"/>
+                    <Unary_Exp op="FIN" typref="2">
+                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:4:2:1:2:2:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:1:1"/>
+                    <Unary_Exp op="FIN" typref="2">
+                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:1:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:2:1"/>
+                    <Unary_Exp op="FIN" typref="2">
+                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:5:2:1:2:1:2:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:1:1"/>
+                    <Unary_Exp op="FIN" typref="2">
+                        <Id value="SS" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:1:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="4"/>
+            <Ref_Hyp num="5"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:2:1"/>
+                    <Unary_Exp op="FIN" typref="2">
+                        <Id value="TT" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:6:2:1:2:1:2:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="9"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="11"/>
+            <Ref_Hyp num="12"/>
+            <Ref_Hyp num="13"/>
+            <Ref_Hyp num="14"/>
+            <Ref_Hyp num="15"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:2"/>
+                    <Unary_Exp op="dom" typref="2">
+                        <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="9"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="11"/>
+            <Ref_Hyp num="12"/>
+            <Ref_Hyp num="13"/>
+            <Ref_Hyp num="14"/>
+            <Ref_Hyp num="15"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:1"/>
+                    <Binary_Exp op="+-&gt;" typref="6">
+                        <Unary_Exp op="dom" typref="2">
+                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:1"/>
+                        </Unary_Exp>
+                        <Unary_Exp op="ran" typref="2">
+                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:1:1"/>
+                        </Unary_Exp>
+                    </Binary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="9"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="11"/>
+            <Ref_Hyp num="12"/>
+            <Ref_Hyp num="13"/>
+            <Ref_Hyp num="14"/>
+            <Ref_Hyp num="15"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="yy" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:2"/>
+                    <Unary_Exp op="dom" typref="2">
+                        <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:1:2:1:3:2:1:2:2:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="9"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="16"/>
+            <Ref_Hyp num="17"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="xx" typref="0" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:2"/>
+                    <Unary_Exp op="dom" typref="2">
+                        <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:1"/>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Assertion is well defined</Tag>
+            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
+            <Ref_Hyp num="7"/>
+            <Ref_Hyp num="8"/>
+            <Ref_Hyp num="9"/>
+            <Ref_Hyp num="10"/>
+            <Ref_Hyp num="16"/>
+            <Ref_Hyp num="17"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:1"/>
+                    <Binary_Exp op="+-&gt;" typref="6">
+                        <Unary_Exp op="dom" typref="2">
+                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:1"/>
+                        </Unary_Exp>
+                        <Unary_Exp op="ran" typref="2">
+                            <Id value="ff" typref="5" tag="C:\Users\Dorian Gailhard\Desktop\formalmet\lab2\bdp\SetAsserts.bxml:1:3:1:8:2:1:2:2:1:2:1:1"/>
+                        </Unary_Exp>
+                    </Binary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <TypeInfos>
+        <Type id="0">
+            <Unary_Exp op="POW">
+                <Id value="INTEGER"/>
+            </Unary_Exp>
+        </Type>
+        <Type id="1">
+            <Id value="INTEGER"/>
+        </Type>
+        <Type id="2">
+            <Unary_Exp op="POW">
+                <Unary_Exp op="POW">
+                    <Id value="INTEGER"/>
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id="3">
+            <Unary_Exp op="POW">
+                <Binary_Exp op="*">
+                    <Id value="INTEGER"/>
+                    <Id value="INTEGER"/>
+                </Binary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id="4">
+            <Unary_Exp op="POW">
+                <Unary_Exp op="POW">
+                    <Binary_Exp op="*">
+                        <Id value="INTEGER"/>
+                        <Id value="INTEGER"/>
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id="5">
+            <Unary_Exp op="POW">
+                <Binary_Exp op="*">
+                    <Unary_Exp op="POW">
+                        <Id value="INTEGER"/>
+                    </Unary_Exp>
+                    <Unary_Exp op="POW">
+                        <Id value="INTEGER"/>
+                    </Unary_Exp>
+                </Binary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id="6">
+            <Unary_Exp op="POW">
+                <Unary_Exp op="POW">
+                    <Binary_Exp op="*">
+                        <Unary_Exp op="POW">
+                            <Id value="INTEGER"/>
+                        </Unary_Exp>
+                        <Unary_Exp op="POW">
+                            <Id value="INTEGER"/>
+                        </Unary_Exp>
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+    </TypeInfos>
+</Proof_Obligations>

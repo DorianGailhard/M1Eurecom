@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebInt first lab</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+    <body>
+		<article id="mainArticle">
+			<div class="titleDiv">
+			<nav class="crumbs">
+				<ol>
+					<li class="crumb"><a href="#">Videos</a></li>
+					<li class="crumb"><a href="#">The Blender Foundation</a></li>
+					<li class="crumb">Big Buck Bunny</li>
+				</ol>
+			</nav>
+			
+				<video id="video1" poster="https://d1tobl1u8ox4qn.cloudfront.net/2018/05/3814a83b-a2d4-4dfd-8945-f1cd003eb16f-1920x1080.jpg" controls>
+					<source src="https://archive.org/download/BigBugBunny_AVCHD/bigBuckBunny_avchd_720p.mp4" type="video/mp4"/>
+					Your browser does not support the video tag.
+				</video>
+			
+				<h2>Big Buck Bunny</h2>
+				<h3>The Blender Foundation</h3>
+			</div>
+			
+			<canvas id="canvasPreview"></canvas>
+			
+			<canvas id="canvasMirror"></canvas>
+			
+			<section>
+				<h4>Controls</h4>
+				<form id="changeURL">
+					<label>Change video by URL <input id="changeURLinput" placeholder="New URL" name="url" type="url"/></label>
+					<button type="submit">Submit</button>
+				</form>
+				  
+				<form id="jump">
+					<label>Jump into the video <input id="jumpInput" placeholder="Timecode" name="url" type="number" min="0"/></label>
+					<button type="submit">Submit</button>
+				</form>
+				
+				<div>
+					<button id="extractPreview" type="button">Extract a preview</button>
+					<button id="disablePreview" type="button">Disable preview</button>
+				</div>
+				
+				<div>
+					<button id="rotateClockwise" type="button">Rotate clockwise</button>
+					<button id="rotateCounterClockwise" type="button">Rotate counter-clockwise</button>
+				</div>
+					
+				<div>
+					<label>Display video controls<input type="checkbox" id="displayControls" checked/></label>
+				</div>
+				
+				<div>
+					<button id="mirror" type="button">Mirror the video in a canvas</button>
+					<button id="disableMirror" type="button">Disable mirroring</button>
+				</div>
+			</section>
+			
+			<section>
+				<h4>Comments</h4>
+
+				<div id="commentDiv">
+				</div>
+			</section>
+		</article>
+		
+		<article>
+			<div id="divBubble">
+				<video id="videoBubble" poster="https://d1tobl1u8ox4qn.cloudfront.net/2018/05/3814a83b-a2d4-4dfd-8945-f1cd003eb16f-1920x1080.jpg" controls>
+					<source src="https://archive.org/download/BigBugBunny_AVCHD/bigBuckBunny_avchd_720p.mp4" type="video/mp4"/>
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			
+			<h2>Video in shape of bubble</h2>
+		</article>
+		
+		<article id="jukeboxArticle">
+			<div class="titleDiv">
+				<video id="jukebox" poster="https://d1tobl1u8ox4qn.cloudfront.net/2018/05/3814a83b-a2d4-4dfd-8945-f1cd003eb16f-1920x1080.jpg" controls>
+					<source src="https://archive.org/download/BigBugBunny_AVCHD/bigBuckBunny_avchd_720p.mp4" type="video/mp4"/>
+					Your browser does not support the video tag.
+				</video>
+			
+				<h2 id="jukeboxTitle">Now playing "Big Buck Bunny"</h2>
+				<h3>Jukebox</h3>
+			</div>
+		</article>
+		
+		<aside>
+			<h4>Suggestions</h4>
+			<hr>
+			<div class="videoSuggestion">
+				<a href="#">
+					<img class="suggestionThumbnail" alt="Big Buck Bunny: The Making-Of, thumbnail" src="https://th.bing.com/th/id/R.08f7f693cbd474b3c8421096ba72b089?rik=EqesDAF%2biu89vw&pid=ImgRaw&r=0">
+					<div>
+						<div class="suggestionTitle">Big Buck Bunny: The Making-Of</div>
+						<br>
+						<div class="suggestionChannel">The Blender Foundation</div>
+					</div>
+				</a>
+			</div>
+			<hr>
+			<div class="videoSuggestion">
+				<a href="#">
+					<img class="suggestionThumbnail" alt= "Sintel, thumbnail" src="https://th.bing.com/th/id/R.1c0bc7c62ff8eeb920297197dfbf4b20?rik=NA4dW9uOr%2faT2Q&pid=ImgRaw&r=0">
+					<div>
+						<div class="suggestionTitle">Sintel</div>
+						<br>
+						<div class="suggestionChannel">The Blender Foundation</div>
+					</div>
+				</a>
+			</div>
+		</aside>
+		
+		<header>
+			<h1 id="title">My video streaming platform</h1>
+			<div id="headerButtons">
+				<button class="headerButton" type="button"><span>Home</span></button>
+				<button class="headerButton" type="button"><span>Trendings</span></button>
+				<button class="headerButton" type="button"><span>Subscribes</span></button>
+				<button class="headerButton" type="button"><span>About</span></button>
+			</div>
+		</header>
+		
+        <footer>This website was made for the first homework of WebInt.</footer>
+    
+		<script src="script.js"></script>
+		
+		<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAANwKCCzBDHLxzHxdbfnulkyYLWu76iUo&callback=buildInterface&libraries=&v=weekly"
+		async
+		></script>
+	</body>
+</html>

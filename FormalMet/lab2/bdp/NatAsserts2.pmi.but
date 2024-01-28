@@ -1,0 +1,1 @@
+﻿Flag(FileOn("NatAsserts2.pmi.res")) & Set(toto | #xx.(xx: INTEGER & 0<=xx & !yy.(yy: INTEGER => xx<=yy)))

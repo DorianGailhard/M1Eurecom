@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movies Room</title>
+<link rel="icon" type="image/x-icon" href="/pictures/favicon.ico">
+
+<style type="text/css">
+	td,
+	th {
+		border: 1px solid rgb(190, 190, 190);
+		padding: 10px;
+	}
+
+	td {
+		text-align: center;
+	}
+
+	tbody:nth-child(even) {
+		background-color: #eee;
+	}
+
+	th[scope="col"] {
+		background-color: #696969;
+		color: #fff;
+	}
+
+	th[scope="row"] {
+		background-color: #d7d9f2;
+	}
+
+	caption {
+		padding: 10px;
+		caption-side: bottom;
+	}
+
+	table {
+		border-collapse: collapse;
+		border: 2px solid rgb(200, 200, 200);
+		letter-spacing: 1px;
+		font-family: sans-serif;
+		font-size: .8rem;
+	}
+	
+	#login {
+		margin: 0 auto;
+		display: block;
+		vertical-align: middle;
+	}
+	
+	#topbar {
+		width: 100%;
+		height: 2cm;
+		background-color: black;
+		color: white;
+		display: none;
+	}
+	
+	#displaylist, wishlisttable {
+		max-height: 70hv;
+	}
+	
+	#displayblock, wishlist {
+		display: none;
+	}
+	
+	#user {
+		float: right;
+		border: 1px solid white;
+	}
+	
+	#wishlistButton {
+		float: right;
+	}
+	
+	#logout {
+		float: right;
+	}
+	
+	#signin {
+	}
+	
+	#waitmessage {
+		display: none;
+	}
+	
+	#icon {
+		height: 1.5cm;
+	}
+</style>
+</head>
+
+<body>
+<div id="login">
+	<img src="pictures/popcorn.png">
+	<button id="signin">
+		Sign in with Google
+	</button>
+</div>
+	
+<div id="topbar">
+</div>
+
+<div id="displayblock">
+	<table id="displaylist"></table>
+</div>
+
+<div id="wishlist">
+	<table id="wishlisttable"></table>
+</div>
+
+<div id="waitmessage"> Loading, please wait...</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyBPb1JN9M_q7uwTQKpTH5evQjVHAQRGXVM",
+  authDomain: "cloudseurecom-db36b.firebaseapp.com",
+  databaseURL: "https://cloudseurecom-db36b-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "cloudseurecom-db36b",
+  storageBucket: "cloudseurecom-db36b.appspot.com",
+  messagingSenderId: "820248863288",
+  appId: "1:820248863288:web:072670ec9185e833ac3ccd",
+  measurementId: "G-YFQYT4L5RL"
+};
+
+firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+<script>
+var database = firebase.database();
+var db = firebase.firestore();
+
+var signin = document.getElementById("signin");
+
+signin.addEventListener("click", function () {
+    const googleAuth = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(googleAuth).then((result) => {
+		if (result.credential) {
+		  var credential = result.credential;
+		  var token = credential.accessToken;
+		}
+		
+		var user = result.user;
+		
+		//Hide the login interface
+		var login = document.getElementById("login");
+		var topbar = document.getElementById("topbar");
+
+		login.style.display = "none";
+		topbar.style.display = "block";
+		
+		topbar.innerHTML = "<a href='#'><img src='pictures/popcorn.png' id='icon'> </a> <button id='logout'>Log out</button> <button id='wishlistButton'>Wishlist</button> <div id='user'>" + user.displayName + "</div>";
+		
+		
+		//Display the list of movies
+		var displaylist = document.getElementById("displaylist");
+		var displayblock = document.getElementById("displayblock");
+		var wishlistDiv = document.getElementById("wishlist");
+		var wishlisttable = document.getElementById("wishlisttable");
+
+		var waitmessage = document.getElementById("waitmessage");
+		waitmessage.style.display = "block";
+		
+		var movies = database.ref('movies-list');
+		movies.on('value', function(dataSnapshot) {
+			waitmessage.style.display = "none";
+			displayblock.style.display = "block";
+			displaylist.innerHTML = "<tr> <th scope='row'>Title</th><th scope='row'>Genre</th><th scope='row'>Year</th></tr>";
+			
+			json = dataSnapshot.val();
+			
+			for (const element of json) {
+				displaylist.innerHTML += "<tr id='" + element.id + "'><th scope='col'>" + element.title +"</th><td>" + element.genre +"</td><td>" + element.year +"</td><td><input type='button' value='Fav' onClick='addWishlist(`" + user.displayName + "`," + element.id + ",`" + element.genre + "`,`" + element.title + "`," + element.year + ")'></td></tr>";
+			}
+			
+			//Wishlist
+			wishlist = db.collection(user.displayName).get().then(function(querySnapshot) {
+				querySnapshot.forEach(function(doc) {
+					document.getElementById(doc.data().id).style.display = "none";
+				});
+			});
+		});
+		
+		//Actions
+		var logout = document.getElementById("logout");
+		logout.addEventListener("click", function() {
+			login.style.display = "block";
+			topbar.style.display = "none";
+			displayblock.style.display = "none";
+			wishlistDiv.style.display = "none";
+		});
+	
+		var wishlistButton = document.getElementById("wishlistButton");
+		wishlistButton.addEventListener("click", function() {
+			login.style.display = "none";
+			topbar.style.display = "block";
+			displayblock.style.display = "none";
+			wishlistDiv.style.display = "block";
+			
+			wishlisttable.innerHTML = "<tr> <th scope='row'>Title</th><th scope='row'>Genre</th><th scope='row'>Year</th></tr>";
+			
+			//Wishlist
+			wishlist = db.collection(user.displayName).get().then(function(querySnapshot) {
+				querySnapshot.forEach(function(doc) {
+					element = doc.data();
+					wishlisttable.innerHTML += "<tr id='wish" + element.id + "'><th scope='col'>" + element.title +"</th><td>" + element.genre + "</td><td>" + element.year +"</td><td><input type='button' value='Remove' onClick='removeWishlist(`" + user.displayName + "`,`" + doc.id + "`," + element.id + ")'></td></tr>";
+				});
+			});
+		});
+		
+		var icon = document.getElementById("icon");
+		icon.addEventListener("click", function() {
+			login.style.display = "none";
+			topbar.style.display = "block";
+			displayblock.style.display = "block";
+			wishlistDiv.style.display = "none";
+		});
+	});
+});
+
+function addWishlist(idUser, idMovie, genre, title, year) {
+	db.collection(idUser).add({
+		id: idMovie,
+		genre: genre,
+		title: title,
+		year: year
+	});
+	
+	var item = document.getElementById(idMovie);
+	item.style.display = "none";
+};
+
+function removeWishlist(idUser, idDoc, idMovie) {
+	db.collection(idUser).doc(idDoc).delete();
+	
+	var item = document.getElementById(idMovie);
+	item.style.display = "inline";
+	
+	var item = document.getElementById("wish" + idMovie);
+	item.style.display = "none";
+};
+</script>
+
+</body>
+</html>

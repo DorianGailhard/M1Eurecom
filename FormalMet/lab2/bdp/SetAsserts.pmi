@@ -1,0 +1,80 @@
+THEORY BalanceX IS
+SetAsserts,20,0,0,11,0,0,0;
+AssertionLemmas,9,0,0,3,0,0,0;
+WellDefinednessAssertions,11,0,0,8,0,0,0
+END
+&
+THEORY ProofState IS
+Proved(0);
+Unproved;
+Unproved;
+Proved(0);
+Unproved;
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Proved(0);
+Proved(0);
+Unproved;
+Unproved;
+Proved(0);
+Unproved;
+Unproved;
+Unproved
+END
+&
+THEORY MethodList IS
+pr;
+?;
+?;
+pr;
+?;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+?;
+pr;
+pr;
+?;
+?;
+pr;
+?;
+?;
+?
+END
+&
+THEORY PassList IS
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3)
+END
+&
+THEORY Status IS
+SetAsserts,20,0,11,0,0,0;
+AssertionLemmas,9,0,3,0,0,0;
+WellDefinednessAssertions,11,0,8,0,0,0
+END

@@ -1,0 +1,68 @@
+THEORY BalanceX IS
+NatAsserts2,16,0,0,7,0,0,0;
+AssertionLemmas,12,0,0,3,0,0,0;
+WellDefinednessAssertions,4,0,0,4,0,0,0
+END
+&
+THEORY ProofState IS
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Proved(0);
+Unproved;
+Unproved;
+Proved(0);
+Unproved;
+Proved(0);
+Unproved;
+Unproved;
+Unproved;
+Unproved;
+Unproved
+END
+&
+THEORY MethodList IS
+pr;
+pr;
+pr;
+pr;
+?;
+pr;
+?;
+?;
+pr;
+?;
+pr;
+?;
+?;
+?;
+?;
+?
+END
+&
+THEORY PassList IS
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3)
+END
+&
+THEORY Status IS
+NatAsserts2,16,0,7,0,0,0;
+AssertionLemmas,12,0,3,0,0,0;
+WellDefinednessAssertions,4,0,4,0,0,0
+END

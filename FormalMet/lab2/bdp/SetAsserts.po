@@ -1,0 +1,71 @@
+THEORY ProofList IS
+_f(1) & _f(2) & WellDefinednessAssertions.11,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(31) & _f(14) & _f(37) & _f(38) => _f(42));
+_f(1) & _f(2) & WellDefinednessAssertions.10,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(31) & _f(14) & _f(37) & _f(38) => _f(41));
+_f(1) & _f(2) & WellDefinednessAssertions.9,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(31) & _f(32) & _f(33) & _f(34) & _f(35) & _f(36) & _f(38) => _f(43));
+_f(1) & _f(2) & WellDefinednessAssertions.8,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(31) & _f(32) & _f(33) & _f(34) & _f(35) & _f(36) & _f(38) => _f(42));
+_f(1) & _f(2) & WellDefinednessAssertions.7,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(30) & _f(31) & _f(32) & _f(33) & _f(34) & _f(35) & _f(36) & _f(38) => _f(41));
+_f(1) & _f(2) & WellDefinednessAssertions.6,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(6) & _f(7) & _f(38) => _f(40));
+_f(1) & _f(2) & WellDefinednessAssertions.5,(_f(25) & _f(26) & _f(27) & _f(28) & _f(29) & _f(6) & _f(7) & _f(38) => _f(39));
+_f(1) & _f(2) & WellDefinednessAssertions.4,(_f(25) & _f(26) & _f(27) & _f(28) & _f(6) & _f(7) & _f(38) => _f(40));
+_f(1) & _f(2) & WellDefinednessAssertions.3,(_f(25) & _f(26) & _f(27) & _f(28) & _f(6) & _f(7) & _f(38) => _f(39));
+_f(1) & _f(2) & WellDefinednessAssertions.2,(_f(25) & _f(26) & _f(27) & _f(6) & _f(7) & _f(8) & _f(38) => _f(40));
+_f(1) & _f(2) & WellDefinednessAssertions.1,(_f(25) & _f(26) & _f(27) & _f(6) & _f(7) & _f(8) & _f(38) => _f(39));
+_f(1) & _f(2) & AssertionLemmas.9,(_f(14) & _f(15) => _f(24));
+_f(1) & _f(2) & AssertionLemmas.8,(_f(9) & _f(10) & _f(12) & _f(13) & _f(8) & _f(15) => _f(23));
+_f(1) & _f(2) & AssertionLemmas.7,(_f(9) & _f(10) & _f(8) & _f(11) & _f(15) => _f(22));
+_f(1) & _f(2) & AssertionLemmas.6,(_f(6) & _f(7) & _f(15) => _f(21));
+_f(1) & _f(2) & AssertionLemmas.5,(_f(6) & _f(7) & _f(15) => _f(20));
+_f(1) & _f(2) & AssertionLemmas.4,(_f(6) & _f(7) & _f(8) & _f(15) => _f(19));
+_f(1) & _f(2) & AssertionLemmas.3,(_f(4) & _f(5) & _f(15) => _f(18));
+_f(1) & _f(2) & AssertionLemmas.2,(_f(3) & _f(15) => _f(17));
+_f(1) & _f(2) & AssertionLemmas.1,(_f(3) & _f(15) => _f(16))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+UNIVERSE: FIN(INTEGER) & not(UNIVERSE = {});
+((SS) : (FIN(NATURAL)));
+nn : INTEGER & 0 <= nn & ((nn) : (NATURAL));
+not(((nn) = (0)));
+((SS) : (FIN(UNIVERSE)));
+((TT) : (FIN(UNIVERSE)));
+SS : POW( TT);
+((SS) : (POW(UNIVERSE)));
+((TT) : (POW(UNIVERSE)));
+TT : POW( SS);
+((UU) : (POW(UNIVERSE)));
+TT : POW( UU);
+#(SS).(SS : POW( POW(UNIVERSE)) & ((ff) : (((SS) +-> (POW(UNIVERSE))))) & !(xx,yy).(((((xx) : (SS)) & ((yy) : (SS)) & xx : POW( yy)) => ((ff )(xx) : POW( (ff )(yy))))));
+"Assertion is verified";
+#(TT).(((TT) : (FIN(NATURAL))) & (SS : POW( TT) & not(SS = TT)));
+#(aa,bb).(((aa) : (NATURAL)) & ((bb) : (NATURAL)) & SS : POW( ((aa) .. (bb))));
+((SET(kk).(((kk) : (NATURAL)) & #(kk).(((kk) : (NATURAL)) & ((nn) = ((kk * kk)))))) : (FIN(NATURAL)));
+(card(SS) <= card(TT));
+(((card(SS) <= card(TT))) => (#(ff).(((ff) : (((SS) >-> (TT))))))) & ((#(ff).(((ff) : (((SS) >-> (TT)))))) => ((card(SS) <= card(TT))));
+(((card(TT) <= card(SS))) => (#(ff).(((ff) : (((SS) -->> (TT))))))) & ((#(ff).(((ff) : (((SS) -->> (TT)))))) => ((card(TT) <= card(SS))));
+((SS) = (TT));
+SS : POW( UU);
+#(xx).(((xx) : (POW(UNIVERSE))) & (((ff )(xx)) = (xx)));
+!(SS).(((((SS) : (FIN(NATURAL)))) => (#(TT).(((TT) : (FIN(NATURAL))) & (SS : POW( TT) & not(SS = TT))))));
+!(SS).(((((SS) : (FIN(NATURAL)))) => (#(aa,bb).(aa : INTEGER & 0 <= aa & ((aa) : (NATURAL)) & bb : INTEGER & 0 <= bb & ((bb) : (NATURAL)) & SS : POW( ((aa) .. (bb)))))));
+!(nn).(((nn : INTEGER & 0 <= nn & ((nn) : (NATURAL)) & not(((nn) = (0)))) => (((SET(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & #(kk).(kk : INTEGER & 0 <= kk & ((kk) : (NATURAL)) & ((nn) = ((kk * kk)))))) : (FIN(NATURAL))))));
+!(SS,TT).(((((SS) : (FIN(UNIVERSE))) & ((TT) : (FIN(UNIVERSE))) & SS : POW( TT)) => ((card(SS) <= card(TT)))));
+!(SS,TT).(((((SS) : (FIN(UNIVERSE))) & ((TT) : (FIN(UNIVERSE)))) => ((((card(SS) <= card(TT))) => (#(ff).(ff : SS +-> TT & ff : SS --> TT & ff~ : TT +-> SS & ((ff) : (((SS) >-> (TT))))))) & ((#(ff).(ff : SS +-> TT & ff : SS --> TT & ff~ : TT +-> SS & ((ff) : (((SS) >-> (TT)))))) => ((card(SS) <= card(TT)))))));
+!(SS,TT).(((((SS) : (FIN(UNIVERSE))) & ((TT) : (FIN(UNIVERSE)))) => ((((card(TT) <= card(SS))) => (#(ff).(ff : SS +-> TT & ff : SS --> TT & ff : SS +->> TT & dom(ff) = SS & ran(ff) = TT & ((ff) : (((SS) -->> (TT))))))) & ((#(ff).(ff : SS +-> TT & ff : SS --> TT & ff : SS +->> TT & dom(ff) = SS & ran(ff) = TT & ((ff) : (((SS) -->> (TT)))))) => ((card(TT) <= card(SS)))))));
+!(SS).(((((SS) : (POW(UNIVERSE)))) => (!(TT).(((((TT) : (POW(UNIVERSE)))) => (((SS : POW( TT) & TT : POW( SS)) => (((SS) = (TT)))) & !(UU).(((((UU) : (POW(UNIVERSE))) & TT : POW( UU) & SS : POW( TT)) => (SS : POW( UU))))))))));
+SS : POW( POW(UNIVERSE));
+((ff) : (((SS) +-> (POW(UNIVERSE)))));
+((xx) : (SS));
+((yy) : (SS));
+xx : POW( yy);
+((xx) : (POW(UNIVERSE)));
+"Assertion is well defined";
+((SS) : (FIN(SS)));
+((TT) : (FIN(TT)));
+((xx) : (dom(ff)));
+((ff) : (((dom(ff)) +-> (ran(ff)))));
+((yy) : (dom(ff)))
+END
+&
+THEORY EnumerateX
+END

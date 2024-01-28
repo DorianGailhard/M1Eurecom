@@ -1,0 +1,8 @@
+digraph {
+Machine2 [ label=" Machine2 " shape= box ]
+MyExample [ label=" MyExample " shape= box ]
+elevator [ label=" elevator " shape= box ]
+mymachine [ label=" mymachine " shape= box ]
+utils_i [ label=" utils\nutils_i " shape= box ]
+
+}

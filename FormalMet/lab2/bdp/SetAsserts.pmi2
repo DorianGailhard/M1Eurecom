@@ -1,0 +1,38 @@
+THEORY BalanceX IS
+SetAsserts,6,0,0,3,0,0,0;
+AssertionLemmas,4,0,0,1,0,0,0;
+WellDefinednessAssertions,2,0,0,2,0,0,0
+END
+&
+THEORY ProofState IS
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Unproved;
+Unproved
+END
+&
+THEORY MethodList IS
+pr;
+pr;
+pr;
+?;
+?;
+?
+END
+&
+THEORY PassList IS
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3);
+Force(0),(?; 0; 1; 2; 3)
+END
+&
+THEORY Status IS
+SetAsserts,6,0,3,0,0,0;
+AssertionLemmas,4,0,1,0,0,0;
+WellDefinednessAssertions,2,0,2,0,0,0
+END

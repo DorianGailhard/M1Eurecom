@@ -1,0 +1,39 @@
+THEORY ProofList IS
+_f(1) & Operation_maxi.8,(_f(2) & _f(3) & _f(9) & _f(5) & _f(13) & _f(17) & _f(6) => _f(21));
+_f(1) & Operation_maxi.7,(_f(2) & _f(3) & _f(9) & _f(5) & _f(13) & _f(16) & _f(6) => _f(18));
+_f(1) & Operation_maxi.6,(_f(2) & _f(3) & _f(9) & _f(5) & _f(10) & _f(12) & _f(6) => _f(19));
+_f(1) & Operation_maxi.5,(_f(2) & _f(3) & _f(9) & _f(5) & _f(10) & _f(11) & _f(6) => _f(18));
+_f(1) & Operation_maxi.4,(_f(2) & _f(3) & _f(9) & _f(4) & _f(13) & _f(15) & _f(6) => _f(20));
+_f(1) & Operation_maxi.3,(_f(2) & _f(3) & _f(9) & _f(4) & _f(13) & _f(14) & _f(6) => _f(18));
+_f(1) & Operation_maxi.2,(_f(2) & _f(3) & _f(9) & _f(4) & _f(10) & _f(12) & _f(6) => _f(19));
+_f(1) & Operation_maxi.1,(_f(2) & _f(3) & _f(9) & _f(4) & _f(10) & _f(11) & _f(6) => _f(18));
+_f(1) & Operation_mini.2,(_f(2) & _f(3) & _f(5) & _f(6) => _f(8));
+_f(1) & Operation_mini.1,(_f(2) & _f(3) & _f(4) & _f(6) => _f(7))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+xx : INTEGER & 0 <= xx & ((xx) : (NATURAL));
+yy : INTEGER & 0 <= yy & ((yy) : (NATURAL));
+(yy <= xx);
+not((yy <= xx));
+"Refinement is correct";
+((yy) = (min(({xx}\/{yy}))));
+((xx) = (min(({xx}\/{yy}))));
+zz : INTEGER & 0 <= zz & ((zz) : (NATURAL));
+(xx <= yy);
+(yy <= zz);
+not((yy <= zz));
+not((xx <= yy));
+(xx <= zz);
+not((xx <= zz));
+(res$1 <= zz);
+not((res$1 <= zz));
+((zz) = (max(({xx}\/{yy}\/{zz}))));
+((yy) = (max(({xx}\/{yy}\/{zz}))));
+((xx) = (max(({xx}\/{yy}\/{zz}))));
+((res$1) = (max(({xx}\/{yy}\/{zz}))))
+END
+&
+THEORY EnumerateX
+END
